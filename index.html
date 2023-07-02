@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Product Data</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    html {
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    :root {
+      --sz: 80px;
+      --on: #4CAF50;
+      --of: #f50000;
+      --gr: #666666;
+      --tr: all 0.5s ease 0s;
+    }
+
+    input {
+      display: none;
+    }
+
+    .container-0 label {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      width: 3rem;
+      height: 1.5rem;
+      background-color: #fff;
+      border-radius: 0.75rem;
+    }
+
+    .container-0 .thumb {
+      position: absolute;
+      top: 0.1875rem;
+      left: 0.1875rem;
+      width: 1.125rem;
+      height: 1.125rem;
+      background-color: #343a40;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    .container-0 input[type="checkbox"]:checked+label .thumb {
+      transform: translateX(1.5rem);
+    }
+
+    .l0,.l1 {
+      transition: all 0.2s;
+    }
+  </style>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/axios.min.js"></script>
+  <script src="js/listingjson.js"></script>
+</head>
+<body>
+  <div class="data-num"></div>
+  <div class="fixed-top mx-auto" style="width: 16rem;">
+    <div class="container-0 bg-primary py-2 rounded-bottom-5 d-flex text-light gap-3 justify-content-center align-content-center shadow">
+      <span class="l0 fs-5 fw-light lead text-uppercase">Buyer</span>
+      <span class="l1 fs-5 fw-light lead text-uppercase visually-hidden">Distributor</span>
+      <input type="checkbox" class="" id="btn">
+      <label for="btn">
+        <span class="thumb"></span>
+      </label>
+    </div>
+  </div>
+  <div class="container-fluid mt-5">
+    <div id="productList" class="row justify-content-evenly"></div>
+  </div>
+
+</body>
+</html>

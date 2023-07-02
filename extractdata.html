@@ -1,0 +1,40 @@
+<script>
+  // Function to extract product details from HTML code
+  function extractProductDetails(htmlCode) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlCode, "text/html");
+
+    const productElements = doc.querySelectorAll("ul.pBox");
+
+    const products = Array.from(productElements).map((productElement) => {
+      const imageUrl = productElement.querySelector("img").src;
+      const title = productElement.querySelector(".ptitle a").textContent;
+      const price = parseFloat(productElement.querySelector(".pprice .numberic").textContent);
+      const points = parseInt(productElement.querySelector(".ppoint .numberic").textContent);
+
+
+      // Replace the image source URL prefix
+      const updatedImageUrl = imageUrl.replace("http://127.0.0.1:5500/", "https://www.atomy.com/");
+
+      // To 
+
+      return {
+        imageUrl: updatedImageUrl,
+        title,
+        price,
+        points
+      };
+    });
+
+    return products;
+  }
+
+  // Prompt the user to input the HTML code
+  const htmlCode = prompt("Please paste the HTML source code:");
+
+  // Extract product details
+  const productDetails = extractProductDetails(htmlCode);
+
+  // Display the extracted data as JSON
+  console.log(JSON.stringify(productDetails, null, null));
+</script>
