@@ -1,82 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="The ultimate solution for a quick look at the products from atomy.com">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Product Data</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/toggler.css">
   <style>
-    html {
-      user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      display: flex;
+      /* background: #ffffff; */
     }
-
-    ::-webkit-scrollbar {
-      display: none;
-    }
-
-    :root {
-      --sz: 80px;
-      --on: #4CAF50;
-      --of: #f50000;
-      --gr: #666666;
-      --tr: all 0.5s ease 0s;
-    }
-
-    input {
-      display: none;
-    }
-
-    .container-0 label {
-      cursor: pointer;
+    
+    .preloader .logo {
       position: relative;
-      display: inline-block;
-      width: 3rem;
-      height: 1.5rem;
-      background-color: #fff;
-      border-radius: 0.75rem;
-    }
-
-    .container-0 .thumb {
-      position: absolute;
-      top: 0.1875rem;
-      left: 0.1875rem;
-      width: 1.125rem;
-      height: 1.125rem;
-      background-color: #343a40;
-      border-radius: 50%;
-      transition: transform 0.3s;
-    }
-
-    .container-0 input[type="checkbox"]:checked+label .thumb {
-      transform: translateX(1.5rem);
-    }
-
-    .l0,.l1 {
-      transition: all 0.2s;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      width: 200px;
+      height: 100px;
     }
   </style>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/axios.min.js"></script>
-  <script src="js/listingjson.js"></script>
 </head>
+
 <body>
-  <div class="data-num"></div>
-  <div class="fixed-top mx-auto" style="width: 16rem;">
-    <div class="container-0 bg-primary py-2 rounded-bottom-5 d-flex text-light gap-3 justify-content-center align-content-center shadow">
-      <span class="l0 fs-5 fw-light lead text-uppercase">Buyer</span>
-      <span class="l1 fs-5 fw-light lead text-uppercase visually-hidden">Distributor</span>
-      <input type="checkbox" class="" id="btn">
-      <label for="btn">
-        <span class="thumb"></span>
-      </label>
+  <div class="preloader">
+    <img src="logo.png" alt="logo" class="logo">
+  </div>
+  <div class="main visually-hidden">
+    <div class="data-num"></div>
+    <div class="fixed-top mx-auto" style="width: 16rem;">
+      <div
+        class="container-0 bg-primary py-2 px-1 rounded-bottom-5 d-flex text-light gap-3 justify-content-evenly align-content-center shadow">
+        <span class="l0 fs-5 fw-light lead text-uppercase">Buyer</span>
+        <span class="l1 fs-5 fw-light lead text-uppercase visually-hidden">Distributor</span>
+        <input type="checkbox" id="btn">
+        <label for="btn">
+          <span class="thumb"></span>
+        </label>
+      </div>
+    </div>
+    <div class="container-fluid mt-5">
+      <div id="productList" class="row justify-content-evenly"></div>
     </div>
   </div>
-  <div class="container-fluid mt-5">
-    <div id="productList" class="row justify-content-evenly"></div>
-  </div>
 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/listingjson.js"></script>
+  <script>
+    jQuery(function () {
+      if ($('.preloader').length) {
+        $('.preloader').delay(300).fadeOut('slow').promise().then(function () {
+          $(this).detach();
+          $('.main').toggleClass('visually-hidden');
+        });
+      }
+    });
+  </script>
 </body>
+
 </html>
