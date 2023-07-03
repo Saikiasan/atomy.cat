@@ -60,7 +60,7 @@
   <script>
     jQuery(function () {
       if ($('.preloader').length) {
-        $('.preloader').delay(300).fadeOut('slow').promise().then(function () {
+        $('.preloader').delay(1500).fadeOut('slow').promise().then(function () {
           $(this).detach();
           $('.main').toggleClass('visually-hidden');
         });
