@@ -1,4 +1,5 @@
 node_modules/
+favicon_io/
 extractdata.html
 package-lock.json
 package.json
