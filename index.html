@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/toggler.css">
   <style>
+    @font-face {
+      font-family: Avalon;
+      src: url(FontsFree-Net-Avalon.ttf);
+    }
+    .card-title {
+      font-family: Avalon, sans-serif;
+    }
     .preloader {
       position: fixed;
       top: 0;
@@ -18,7 +25,6 @@
       bottom: 0;
       overflow: hidden;
       display: flex;
-      /* background: #ffffff; */
     }
     
     .preloader .logo {
@@ -40,13 +46,8 @@
     <div class="data-num"></div>
     <div class="fixed-top mx-auto" style="width: 16rem;">
       <div
-        class="container-0 bg-primary py-2 px-1 rounded-bottom-5 d-flex text-light gap-3 justify-content-evenly align-content-center shadow">
-        <span class="l0 fs-5 fw-light lead text-uppercase">Buyer</span>
-        <span class="l1 fs-5 fw-light lead text-uppercase visually-hidden">Distributor</span>
-        <input type="checkbox" id="btn">
-        <label for="btn">
-          <span class="thumb"></span>
-        </label>
+        class="container-0 bg-black py-2 px-1 rounded-bottom-5 d-flex text-light gap-3 justify-content-evenly align-content-center shadow">
+        <span class="l0 fs-5 fw-light lead text-uppercase">Detailed stat</span>
       </div>
     </div>
     <div class="container-fluid mt-5">
@@ -56,7 +57,7 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/listingjson.js"></script>
+  <script src="js/dualprocessor.js"></script>
   <script>
     jQuery(function () {
       if ($('.preloader').length) {

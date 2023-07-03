@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div id="productList"></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    jQuery(function () {
+      function loadData() {
+  // Fetch data from the first JSON file
+  $.getJSON('data/productdata.json', function(productData) {
+    // Fetch data from the second JSON file
+    $.getJSON('data/dist.pv.json', function(distributorData) {
+      processData(productData, distributorData);
+    }).fail(function(error) {
+      console.error('Error fetching distributor data:', error);
+    });
+  }).fail(function(error) {
+    console.error('Error fetching product data:', error);
+  });
+}
+
+function processData(productData, distributorData) {
+  const totaldisplay = $('<div>').addClass('badge bg-danger rounded-circle p-2 m-2 position-fixed top-0 start-0 fs-5 shadow').text(productData.length + distributorData.length).css({
+    zIndex: 100
+  });
+  $('.data-num').append(totaldisplay);
+
+  productData.forEach(product => {
+    const distributor = distributorData.find(distributor => distributor.title === product.title);
+
+    const card = createCard(product.title, product.price, distributor.price, distributor.points, product.imageUrl);
+    $('#productList').append(card);
+  });
+}
+
+function createCard(title, price, distributorPrice, points, imageUrl) {
+  const card = $('<div>').addClass('card col-md-4 col-lg-2 shadow m-4');
+  const image = $('<img>').addClass('mx-auto my-2').attr('src', imageUrl).attr('alt', 'Product Image').css({
+    width: '200px',
+    height: '200px'
+  });
+  const cardBody = $('<div>').addClass('card-body text-center p-2 mb-2');
+  const titleElement = $('<h5>').addClass('card-title').text(title);
+  const priceElement = $('<p>').addClass('card-text text-primary fw-bold fs-4').text('MRP: ₹ ' + price);
+  const distributorPriceElement = $('<p>').addClass('card-text text-success fw-bold fs-4').text('Distributor Price: ₹ ' + distributorPrice);
+  const pointsElement = $('<p>').addClass('card-text text-success fw-bold fs-4').text('Points: ' + points);
+
+  cardBody.append(titleElement, priceElement, distributorPriceElement, pointsElement);
+  card.append(image, cardBody);
+
+  return card;
+}
+
+// Call the function to load data from the JSON files
+loadData();
+
+
+    })
+  </script>
+</body>
+
+</html>
