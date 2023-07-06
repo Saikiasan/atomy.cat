@@ -1,0 +1,113 @@
+<script>
+function extractTablesFromHTML(htmlCode) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(htmlCode, "text/html");
+  const detailBase = doc.querySelector(".DetailBase");
+  const tables = detailBase.querySelectorAll("table");
+  
+  const data = [];
+  
+  tables.forEach((table) => {
+    const gdsCode = table.querySelector("#tGdsCode").span;
+    const tableData = [];
+    
+    const rows = table.querySelectorAll("tr");
+    rows.forEach((row) => {
+      const cells = row.querySelectorAll("td, th");
+      const rowData = Array.from(cells).map((cell) => cell.textContent.trim());
+      tableData.push(rowData);
+    });
+    
+    data.push({
+      gds_code: gdsCode,
+      table_data: tableData,
+    });
+  });
+  
+  return data;
+}
+
+// Example usage
+const htmlCode = `<div class="DetailBase">
+            <table class="tableStyle1 mt10">
+                <colgroup>
+                    <col style="width:25%">
+                    <col style="width:auto">
+                </colgroup>
+                    <tbody><tr>
+                        <th scope="row" class="DBt">Distributor price</th>
+                        <td class="DBt prices">
+                            <span style="color:#333">₹</span> <span class="red numberic" id="vatCustPrice">1,100.00</span>
+
+                            <span class="tax-message red">(Excluding Tax)</span>
+                        </td>
+                    </tr>
+					<!-- GST 추가-->
+                    <tr>
+                        <th scope="row" class="DBt">GST</th>
+                        <td class="DBt prices">
+                            <span style="color:#333">₹</span> 
+                            <!-- GST 값-->
+                            <span class="red numberic" id="CustVatAmt">198.00</span>
+                        </td>
+                    </tr>
+					<!-- GST 끝-->
+					<!-- Total Price 추가-->
+                    <tr>
+                        <th scope="row" class="DBt">Total Price</th>
+                        <td class="DBt prices">
+                            <span style="color:#333">₹</span>
+                            <!--  Total Price 값-->
+                            <span class="red numberic price" id="tTotalPrice">1,298.00</span>
+                        </td>
+                    </tr>
+					<!-- Total Price 끝-->
+                    <tr>
+                        <th scope="row" class="DBt">PV</th>
+                        <td class="DBt prices"><span class="blue numberic ttpv" id="tPvPrice">7,000</span> <span style="color: #333">PV</span></td>
+                    </tr>
+                <tr>
+                    <th scope="row" class="DBt gdItem bbn">Product Code</th>
+                    <td id="tGdsCode" class="prices bbn vm" style="color:#000;">D00826</td>
+                </tr>
+            </tbody></table>
+            <table class="tableStyle1 TSbt">
+                <colgroup>
+                    <col style="width:25%">
+                    <col style="width:auto">
+                </colgroup>
+                <tfoot>
+                        <tr>
+                            <th scope="row" class="blue">Total</th>
+                            <td class="priceb" style="padding-top:10px;color:#333">
+                                ₹ <span class="red numberic ttprice" id="total">1,298.00</span>
+                                <span class="tax-message red">(Including Tax)</span>
+                            </td>
+                        </tr>
+                </tfoot>
+                <tbody>
+                        <tr>
+                            <th scope="row" class="gdItem">Delivery Free</th>
+                            <td id="tDeliGubun" class="gdDesc">
+                                    <span class="mb10" style="display: block;">Free delivery for orders above ₹ 4,500.00</span>
+                            </td>
+                        </tr>
+                        <tr class="poption">
+                            <th scope="row" class="gdItem">Quantity</th>
+                            <td class="vm">
+                                <ul class="g-counter mt10 mb10">
+                                    <li><a href="javascript:;" class="g-counter-btn subtraction"><i class="xi-minus"></i><span class="a11y">subtraction</span></a></li>
+                                    <li><input name="lQty" id="tQty" type="text" value="1" class="g-counter-input" numberonly=""></li>
+                                    <li><a href="javascript:;" class="g-counter-btn addition"><i class="xi-plus"></i><span class="a11y">addition</span></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>`; // Insert your HTML code here
+
+const extractedData = extractTablesFromHTML(htmlCode);
+const jsonData = JSON.stringify(extractedData, null, 2);
+console.log(jsonData);
+
+</script>

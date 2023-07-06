@@ -8,7 +8,9 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Product Data</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.compat.css">
   <link rel="stylesheet" href="css/toggler.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
   <style>
     @font-face {
       font-family: Avalon;
@@ -38,6 +40,18 @@
       height: 100px;
     }
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QH5HZNRTTE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QH5HZNRTTE');
+  </script>
 </head>
 
 <body>
@@ -59,6 +73,7 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
   <script src="js/dualprocessor.js"></script>
   <script>
     jQuery(function () {
@@ -68,20 +83,40 @@
           $('.main').toggleClass('visually-hidden');
         });
       }
+
+      // Function to handle card click event
+      function handleCardClick() {
+        var gdsCode = $(this).data('link');
+        if (gdsCode) {
+          Swal.fire({
+            icon: 'info',
+            html: 'Would you like to view the product details?',
+            showCancelButton: true,
+            confirmButtonText: '<i class="fa fa-check-circle fa-2x"></i>',
+            cancelButtonText: '<i class="fa fa-close fa-2x"></i>',
+            showClass: {
+              popup: 'animated fadeIn fast'
+            },
+            hideClass: {
+              popup: 'animated fadeOut fast'
+            },
+            customClass: {
+              confirmButton: 'btn bg-success text-light rounded-3 me-4 ',
+              cancelButton: 'btn bg-danger text-light rounded-3 ms-4 '
+            },
+            buttonsStyling: false
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = 'result.html?gds=' + gdsCode;
+            }
+          })
+        }
+      }
+
+      // Attach click event handler using event delegation
+      $(document).on('click', '.card[data-link]', handleCardClick);
+
     });
-  </script>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QH5HZNRTTE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-QH5HZNRTTE');
   </script>
 </body>
 

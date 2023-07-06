@@ -1,9 +1,9 @@
 jQuery(function () {
   function loadData() {
     // Fetch data from the first JSON file
-    $.getJSON('data/productdata.json', function (productData) {
+    $.getJSON('data/level0.json', function (productData) {
       // Fetch data from the second JSON file
-      $.getJSON('data/dist.pv.json', function (distributorData) {
+      $.getJSON('data/level1.json', function (distributorData) {
         processData(productData, distributorData);
       }).fail(function (error) {
         console.error('Error fetching distributor data:', error);
@@ -20,19 +20,20 @@ jQuery(function () {
     $('.data-num').append(totaldisplay);
 
     productData.forEach(product => {
-      const distributor = distributorData.find(distributor => distributor.title === product.title);
+      const distributor = distributorData.find(distributor => distributor.gds === product.gds);
 
-      const card = createCard(product.title, product.price, distributor.price, distributor.points, product.imageUrl);
+      const card = createCard(product.gds,product.title, product.price, distributor.price, distributor.points, product.imageUrl);
       $('#productList').append(card);
     });
   }
 
-  function createCard(title, price, distributorPrice, points, imageUrl) {
-    const card = $('<div>').addClass('card col-md-4 col-lg-2 m-4 border-0');
+  function createCard(gds,title, price, distributorPrice, points, imageUrl) {
+    const card = $('<div>').addClass('card col-md-4 col-lg-2 m-4 border-0').attr('data-link',gds);
     const image = $('<img>').addClass('mx-auto my-2').attr('src', imageUrl).attr('alt', 'Product Image').css({
       width: '200px',
       height: '200px'
     });
+
     const cardBody = $('<div>').addClass('card-body text-center p-2 mb-2 rounded-4 shadow');
     const distBody = $('<div>').addClass('rounded-4 mx-5 py-2 bg-dark mb-3');
     const titleElement = $('<h5>').addClass('card-title fs-4 mb-2').text(title);
@@ -40,7 +41,7 @@ jQuery(function () {
     const distributorPriceElement = $('<p>').addClass('card-text text-success fw-bolder fs-3 mb-0 pb-0').text('DP: ₹ ' + distributorPrice);
     const pointsElement = $('<p>').addClass('card-text text-danger fw-bold fs-3').text('PV: ' + points);
 
-    distBody.append(distributorPriceElement, pointsElement)
+    distBody.append(distributorPriceElement, pointsElement);
     cardBody.append(titleElement, priceElement, distBody);
     card.append(image, cardBody);
 
@@ -52,7 +53,7 @@ jQuery(function () {
 
   // Check if the screen width is less than or equal to a mobile threshold
   function isMobileScreen() {
-    return $(window).width() <= 768; // Adjust the threshold as needed
+    return $(window).width() < $(window).height(); // Adjust the threshold as needed
   }
 
   // Function to be executed if the screen is detected as mobile
