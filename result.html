@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
   <meta name="description" content="The ultimate solution for a quick look at the products from atomy.com">
+  <meta name="keywords" content="Atomy assam, assam atomy catalogur, mellokits palace">
+  <meta name="author" content="Ankit Saikia">
   <title>Result Page</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <style>
@@ -62,8 +64,8 @@
   <div class="preloader">
     <img src="logo.png" alt="logo" class="logo">
   </div>
-  <div class="main visually-hidden p-4">
-    <div id="result"></div>
+  <div class="main visually-hidden p-2 pt-5 pb-5">
+    <div id="result" class="pb-5"></div>
     <div id="imageD1"></div>
   </div>
 
@@ -93,14 +95,14 @@
 
             if (foundData) {
               // Create an image element
-              var imageElement = $('<img>').attr('src', foundData.bannerImgUrl).addClass('mx-auto d-flex').css({width:'300px',height:'300px'});
+              var imageElement = $('<img>').attr('src', foundData.bannerImgUrl).addClass('mx-auto d-flex pb-5').css({width:'300px',height:'300px'});
 
               //dataline
               if (foundData.detailImages && foundData.detailImages.length > 0) {
                 var containerElement1 = $('#imageD1');
 
                 foundData.detailImages.forEach(function (imageUrl) {
-                  var imageElement = $('<img>').attr('src', imageUrl).addClass('p-4').css({width:'100%'});
+                  var imageElement = $('<img>').attr('src', imageUrl).addClass('p-1').css({width:'100%'});
                   containerElement1.append(imageElement);
                 });
               } else {
