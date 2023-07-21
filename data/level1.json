@@ -28,18 +28,11 @@
     "points": 1600
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00183",
-    "gds": "D00183",
-    "title": "Atomy Pomegranate Mixed Fruit Jelly",
-    "price": 6401.5,
-    "points": 35000
-  },
-  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00104",
     "gds": "D00104",
     "title": "HemoHIM *4set",
-    "price": 44840,
-    "points": 325000
+    "price": 40120,
+    "points": 290000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D90178",
@@ -591,7 +584,7 @@
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00101",
     "gds": "D00101",
     "title": "HemoHIM *1set",
-    "price": 12449,
-    "points": 90000
+    "price": 10620,
+    "points": 80000
   }
 ]
