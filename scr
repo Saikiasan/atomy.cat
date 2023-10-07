@@ -1,0 +1,121 @@
+
+  <script>
+    jQuery(function () {
+      if ($('.preloader').length) {
+        $('.preloader').delay(1500).fadeOut('slow').promise().then(function () {
+          $(this).detach();
+          $('.main').toggleClass('visually-hidden');
+        });
+      }
+
+      // Function to handle card click event
+      function handleCardClick() {
+        var gdsCode = $(this).data('link');
+        if (gdsCode) {
+          Swal.fire({
+            icon: 'info',
+            html: 'Would you like to view the product details?',
+            showCancelButton: true,
+            confirmButtonText: '<i class="fa fa-check-circle fa-2x"></i>',
+            cancelButtonText: '<i class="fa fa-close fa-2x"></i>',
+            showClass: {
+              popup: 'animated fadeIn fast'
+            },
+            hideClass: {
+              popup: 'animated fadeOut fast'
+            },
+            customClass: {
+              confirmButton: 'btn bg-success text-light rounded-3 me-4 ',
+              cancelButton: 'btn bg-danger text-light rounded-3 ms-4 '
+            },
+            buttonsStyling: false
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = 'result.html?gds=' + gdsCode;
+            }
+          })
+        }
+      }
+
+      // Attach click event handler using event delegation
+      $(document).on('click', '.card[data-link]', handleCardClick);
+
+      const menu = $(".menu");
+      const menuItems = menu.find(".menu__item");
+      const menuBorder = menu.find(".menu__border");
+      let activeItem = menu.find(".active");
+
+      function clickItem(item, index) {
+        menu.css("--timeOut", "");
+
+        if (activeItem.is(item)) return;
+
+        if (activeItem.length) {
+          activeItem.removeClass("active");
+        }
+
+        item.addClass("active");
+        activeItem = item;
+        offsetMenuBorder(activeItem, menuBorder);
+      }
+
+      function offsetMenuBorder(element, menuBorder) {
+        const offsetActiveItem = element[0].getBoundingClientRect();
+        const left = Math.floor(offsetActiveItem.left - menu[0].offsetLeft - (menuBorder.outerWidth() -
+          offsetActiveItem.width) / 2) + "px";
+        menuBorder.css("transform", `translate3d(${left}, 0, 0)`);
+      }
+
+      offsetMenuBorder(activeItem, menuBorder);
+
+      menuItems.on("click", function () {
+        clickItem($(this), menuItems.index(this));
+        const page = $(this).data('page')
+        handleMenuClick(page)
+      });
+
+      $(window).on("resize", function () {
+        offsetMenuBorder(activeItem, menuBorder);
+        menu.css("--timeOut", "none");
+      });
+
+      function handleMenuClick(page) {
+        console.log(page)
+        const activeItem = $('#' + page + '.spa-23')
+        $('.spa-23').not(activeItem).fadeOut(500).removeClass('active')
+        activeItem.fadeIn(800).addClass('active')
+      }
+
+      handleMenuClick('productList')
+
+      $('#topInfoBtn').on('click',function(){
+        $('#topInfo').addClass('visually-hidden')
+      })
+
+    });
+  </script>
+
+  <script>
+    let deferredPrompt;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      console.log("'beforeinstallprompt' event was fired.");
+    });
+
+    $('#installApp').on('click', async () => {
+      deferredPrompt.prompt();
+      const {
+        outcome
+      } = await deferredPrompt.userChoice;
+      console.log(`User response to the install prompt: ${outcome}`);
+      deferredPrompt = null;
+    });
+
+    window.addEventListener('appinstalled', () => {
+      deferredPrompt = null;
+      console.log('PWA was installed');
+    });
+    feather.replace();
+  </script>
