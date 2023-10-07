@@ -1,4 +1,4 @@
-jQuery(function () {
+export const datafetch = () => {
   function loadData() {
     // Fetch data from the first JSON file
     $.getJSON('data/level0.json', function (productData) {
@@ -22,13 +22,13 @@ jQuery(function () {
     productData.forEach(product => {
       const distributor = distributorData.find(distributor => distributor.gds === product.gds);
 
-      const card = createCard(product.gds,product.title, product.price, distributor.price, distributor.points, product.imageUrl);
+      const card = createCard(product.gds, product.title, product.price, distributor.price, distributor.points, product.imageUrl);
       $('#productList').append(card);
     });
   }
 
-  function createCard(gds,title, price, distributorPrice, points, imageUrl) {
-    const card = $('<div>').addClass('card col-md-4 col-lg-2 m-4 border-0').attr('data-link',gds);
+  function createCard(gds, title, price, distributorPrice, points, imageUrl) {
+    const card = $('<div>').addClass('card col-md-4 col-lg-2 m-4 border-0').attr('data-link', gds);
     const image = $('<img>').addClass('mx-auto my-2').attr('src', imageUrl).attr('alt', 'Product Image').css({
       width: '200px',
       height: '200px'
@@ -60,11 +60,14 @@ jQuery(function () {
   function mobileScreenFunction() {
     console.log('Mobile screen detected!');
   }
-  
+
   // Function to be executed if the screen is not detected as mobile
   function nonMobileScreenFunction() {
     console.log('Non-mobile screen detected!');
-    setInterval(function(){$('.card').addClass('shadow');$('.card-body').removeClass('shadow')},300)
+    setInterval(function () {
+      $('.card').addClass('shadow');
+      $('.card-body').removeClass('shadow')
+    }, 300)
     // Add your non-mobile-specific code here
   }
 
@@ -76,7 +79,7 @@ jQuery(function () {
   }
 
   // Check on window resize
-  $(window).on('resize', function() {
+  $(window).on('resize', function () {
     if (isMobileScreen()) {
       mobileScreenFunction();
     } else {
@@ -84,4 +87,4 @@ jQuery(function () {
     }
   });
 
-})
+}
