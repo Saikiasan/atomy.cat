@@ -59,7 +59,7 @@ export const datafetch = () => {
           lazyImage.attr('src',lazyImage.data('src')).addClass('fadeIn');
         } else {
           // Image is not in view
-          lazyImage.attr('src','').removeClass('fadeIn');
+          lazyImage.removeClass('fadeIn');
         }
       });
     });
