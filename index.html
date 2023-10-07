@@ -11,7 +11,7 @@
     content="atomy,atomy products,korean items,korea global atomy,product catalogue atomy,ankit saikia, keson dutta, jc taid, assam atomy, atomy assam">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="manifest" href="manifest.json">
-  <title>Homepage - atomy.cat</title>
+  <title>ATOMY PRODUCT LISTS</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.compat.css">
   <link rel="stylesheet" href="css/toggler.css">
@@ -21,6 +21,10 @@
     @font-face {
       font-family: Avalon;
       src: url(FontsFree-Net-Avalon.ttf);
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
     }
 
     .card-title {
@@ -58,33 +62,33 @@
 
     gtag('config', 'G-QH5HZNRTTE');
   </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
 </head>
 
 <body>
   <div class="preloader">
     <img src="logo.png" alt="logo" class="logo">
   </div>
-  <div class="main visually-hidden">
-
-    <div class="d-flex bg-danger justify-content-between pb-1 px-2" id="topInfo">
+  <header class="visually-hidden">
+    <div class="d-flex bg-danger justify-content-between pb-1 px-2 visually-hidden" id="topInfo">
       <div class="updatedtext">
-        <span class="fw-bold"><i data-feather="arrow-up-circle" width="1.2em" stroke-width="2pt"></i>&nbsp;&nbsp;Date updated : 11-07-2023</span>
+        <span class="fw-bold"><i data-feather="arrow-up-circle" width="1.2em" stroke-width="2pt"></i>&nbsp;&nbsp;Date
+          updated : 11-07-2023</span>
       </div>
       <button class="btn p-0 m-0" id="topInfoBtn">
         <i data-feather="x-circle"></i>
       </button>
     </div>
-    
     <menu class="menu">
-
       <button class="menu__item" style="--bgColorItem: #ff8c00;" data-page="user">
         <svg class="icon" viewBox="0 0 24 24">
           <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
           <circle cx="12" cy="7" r="4"></circle>
         </svg>
       </button>
-
-      <button class="menu__item" style="--bgColorItem: #f54888;" data-page="setting">
+      <button class="menu__item" style="--bgColorItem: #f54888;" data-page="settings">
         <svg class="icon" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="3"></circle>
           <path
@@ -92,14 +96,12 @@
           </path>
         </svg>
       </button>
-
-      <button class="menu__item active" style="--bgColorItem: #67b2f0;" data-page="productList">
+      <button class="menu__item active" style="--bgColorItem: #67b2f0;" data-page="home">
         <svg viewBox="0 0 24 24" class="icon">
           <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
           <polyline points="9 22 9 12 15 12 15 22"></polyline>
         </svg>
       </button>
-
       <button class="menu__item" style="--bgColorItem: #e0b115;" data-page="dash">
         <svg class="icon" viewBox="0 0 24 24">
           <path d="M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1
@@ -108,7 +110,6 @@
           <path d="M9.1,9.5v10.3" />
         </svg>
       </button>
-
       <button class="menu__item" style="--bgColorItem:#65ddb7;" data-page="menuList">
         <svg class="icon" viewBox="0 0 24 24">
           <path d="M3.8,6.6h16.4" />
@@ -116,11 +117,8 @@
           <path d="M3.8,17.5h16.4" />
         </svg>
       </button>
-
       <div class="menu__border"></div>
-
     </menu>
-
     <div class="svg-container">
       <svg viewBox="0 0 202.9 45.5">
         <clipPath id="menu" clipPathUnits="objectBoundingBox" transform="scale(0.0049285362247413 0.021978021978022)">
@@ -130,177 +128,14 @@
         </clipPath>
       </svg>
     </div>
+  </header>
 
+  <div class="main container-fluid mt-5">
     <!-- <div class="data-num"></div> -->
-    <div class="container-fluid mt-5">
-
-      <div id="productList" class="row justify-content-evenly spa-23"></div>
-
-      <section id="menuList" class="spa-23">
-        <div class="vstack gap-4">
-          <div class="p-2 shadow-sm rounded-2"><i data-feather="youtube" fill="red"></i>&nbsp;&nbsp;<a href="#comingsoon">YouTube Channels</a></div>
-          <div class="p-2 shadow-sm rounded-2"><i data-feather="video" fill="blue"></i>&nbsp;&nbsp;<a href="#comingsoon">Make more ++</a></div>
-          <div class="p-2 shadow-sm rounded-2"><i data-feather="users" fill="none" stroke="green" stroke-width="1.5pt"></i>&nbsp;&nbsp;<a href="#comingsoon">Meeting with an associate</a></div>
-        </div>
-      </section>
-
-      <section class="spa-23" id="setting">
-        <div class="card">
-          <div class="card-body">
-            <h5>This feature will be available soon</h5>
-            <p>Wait for some time and this feature will be released soon.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="spa-23" id="user">
-        <div class="card">
-          <div class="card-body">
-            <h5>This feature will be available soon</h5>
-            <p>Wait for some time and this feature will be released soon.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="spa-23" id="dash">
-        <div class="card">
-          <div class="card-body">
-            <h5>This feature will be available soon</h5>
-            <p>Wait for some time and this feature will be released soon.</p>
-          </div>
-        </div>
-      </section>
-
-    </div>
-
+    <root></root>
   </div>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/sweetalert2.all.min.js"></script>
-  <script src="js/dualprocessor.js"></script>
-  <script src="js/feather.min.js"></script>
-
-  <script>
-    jQuery(function () {
-      if ($('.preloader').length) {
-        $('.preloader').delay(1500).fadeOut('slow').promise().then(function () {
-          $(this).detach();
-          $('.main').toggleClass('visually-hidden');
-        });
-      }
-
-      // Function to handle card click event
-      function handleCardClick() {
-        var gdsCode = $(this).data('link');
-        if (gdsCode) {
-          Swal.fire({
-            icon: 'info',
-            html: 'Would you like to view the product details?',
-            showCancelButton: true,
-            confirmButtonText: '<i class="fa fa-check-circle fa-2x"></i>',
-            cancelButtonText: '<i class="fa fa-close fa-2x"></i>',
-            showClass: {
-              popup: 'animated fadeIn fast'
-            },
-            hideClass: {
-              popup: 'animated fadeOut fast'
-            },
-            customClass: {
-              confirmButton: 'btn bg-success text-light rounded-3 me-4 ',
-              cancelButton: 'btn bg-danger text-light rounded-3 ms-4 '
-            },
-            buttonsStyling: false
-          }).then((result) => {
-            if (result.isConfirmed) {
-              window.location.href = 'result.html?gds=' + gdsCode;
-            }
-          })
-        }
-      }
-
-      // Attach click event handler using event delegation
-      $(document).on('click', '.card[data-link]', handleCardClick);
-
-      const menu = $(".menu");
-      const menuItems = menu.find(".menu__item");
-      const menuBorder = menu.find(".menu__border");
-      let activeItem = menu.find(".active");
-
-      function clickItem(item, index) {
-        menu.css("--timeOut", "");
-
-        if (activeItem.is(item)) return;
-
-        if (activeItem.length) {
-          activeItem.removeClass("active");
-        }
-
-        item.addClass("active");
-        activeItem = item;
-        offsetMenuBorder(activeItem, menuBorder);
-      }
-
-      function offsetMenuBorder(element, menuBorder) {
-        const offsetActiveItem = element[0].getBoundingClientRect();
-        const left = Math.floor(offsetActiveItem.left - menu[0].offsetLeft - (menuBorder.outerWidth() -
-          offsetActiveItem.width) / 2) + "px";
-        menuBorder.css("transform", `translate3d(${left}, 0, 0)`);
-      }
-
-      offsetMenuBorder(activeItem, menuBorder);
-
-      menuItems.on("click", function () {
-        clickItem($(this), menuItems.index(this));
-        const page = $(this).data('page')
-        handleMenuClick(page)
-      });
-
-      $(window).on("resize", function () {
-        offsetMenuBorder(activeItem, menuBorder);
-        menu.css("--timeOut", "none");
-      });
-
-      function handleMenuClick(page) {
-        console.log(page)
-        const activeItem = $('#' + page + '.spa-23')
-        $('.spa-23').not(activeItem).fadeOut(500).removeClass('active')
-        activeItem.fadeIn(800).addClass('active')
-      }
-
-      handleMenuClick('productList')
-
-      $('#topInfoBtn').on('click',function(){
-        $('#topInfo').addClass('visually-hidden')
-      })
-
-    });
-  </script>
-
-  <script>
-    let deferredPrompt;
-
-    window.addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault();
-      deferredPrompt = e;
-      console.log("'beforeinstallprompt' event was fired.");
-    });
-
-    $('#installApp').on('click', async () => {
-      deferredPrompt.prompt();
-      const {
-        outcome
-      } = await deferredPrompt.userChoice;
-      console.log(`User response to the install prompt: ${outcome}`);
-      deferredPrompt = null;
-    });
-
-    window.addEventListener('appinstalled', () => {
-      deferredPrompt = null;
-      console.log('PWA was installed');
-    });
-    feather.replace();
-  </script>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
