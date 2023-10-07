@@ -4,10 +4,6 @@ html {
   -webkit-user-select: none;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 :root {
   --sz: 80px;
   --on: #4CAF50;

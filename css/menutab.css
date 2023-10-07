@@ -7,7 +7,6 @@ menu {
 }
 
 .menu {
-
   margin: 0;
   display: flex;
   /* Works well with 100% width  */
@@ -20,11 +19,9 @@ menu {
   align-items: center;
   justify-content: center;
   background-color: var(--bgColorMenu);
-
 }
 
 .menu__item {
-
   all: unset;
   flex-grow: 1;
   z-index: 100;
@@ -37,11 +34,9 @@ menu {
   justify-content: center;
   padding: 0.55em 0 0.85em;
   transition: transform var(--timeOut, var(--duration));
-
 }
 
 .menu__item::before {
-
   content: "";
   z-index: -1;
   width: 4.2em;
@@ -50,7 +45,6 @@ menu {
   position: absolute;
   transform: scale(0);
   transition: background-color var(--duration), transform var(--duration);
-
 }
 
 
@@ -61,14 +55,11 @@ menu {
 }
 
 .menu__item.active::before {
-
   transform: scale(1);
   background-color: var(--bgColorItem);
-
 }
 
 .icon {
-
   width: 2.6em;
   height: 2.6em;
   stroke: white;
@@ -78,27 +69,19 @@ menu {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-dasharray: 400;
-
 }
 
 .menu__item.active .icon {
-
   animation: strok 1.5s reverse;
-
 }
 
 @keyframes strok {
-
   100% {
-
     stroke-dashoffset: 400;
-
   }
-
 }
 
 .menu__border {
-
   left: 0;
   bottom: 99%;
   width: 10.9em;
@@ -107,13 +90,11 @@ menu {
   clip-path: url(#menu);
   will-change: transform;
   background-color: var(--bgColorMenu);
-  /* transition: all .7s ease-in-out; */
+  transition: all .7s ease-in-out;
   transition: transform var(--timeOut, var(--duration));
-
 }
 
 .svg-container {
-
   width: 0;
   height: 0;
 }
@@ -129,8 +110,9 @@ menu {
   text-decoration: none;
   color: #000000;
   font-weight: 500;
-  font-family: Avalon,sans-serif;
+  font-family: Avalon, sans-serif;
 }
+
 .vstack .p-2 {
   margin: 0 3em 0 2em
 }
