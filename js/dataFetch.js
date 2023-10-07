@@ -29,7 +29,11 @@ export const datafetch = () => {
 
   function createCard(gds, title, price, distributorPrice, points, imageUrl) {
     const card = $('<div>').addClass('card col-md-4 col-lg-2 m-4 border-0').attr('data-link', gds);
-    const image = $('<img>').addClass('mx-auto my-2').attr('src', imageUrl).attr('alt', 'Product Image').css({
+    const image = $('<img>').addClass('mx-auto my-2 animated').attr({
+      'data-src': imageUrl,
+      'alt': gds,
+      'loading': 'lazy'
+    }).css({
       width: '200px',
       height: '200px'
     });
@@ -44,6 +48,24 @@ export const datafetch = () => {
     distBody.append(distributorPriceElement, pointsElement);
     cardBody.append(titleElement, priceElement, distBody);
     card.append(image, cardBody);
+
+    // Intersection Observer setup
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const lazyImage = $(entry.target);
+
+        if (entry.isIntersecting) {
+          // Image is in view
+          lazyImage.attr('src',lazyImage.data('src')).addClass('fadeIn');
+        } else {
+          // Image is not in view
+          lazyImage.attr('src','').removeClass('fadeIn');
+        }
+      });
+    });
+
+    // Start observing the image
+    observer.observe(image[0]);
 
     return card;
   }
@@ -86,5 +108,5 @@ export const datafetch = () => {
       nonMobileScreenFunction();
     }
   });
-
+  
 }
