@@ -1,3 +1,97 @@
+<style>
+  #closeIcon i {
+    color: red;
+    font-size: 2em;
+    z-index: 100;
+    margin-left: 5px;
+  }
+  #closeIcon {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<div class="container fixed-top bg-info animated slideInDown slow delay-1s">
+  <div class="row py-2 shadow">
+    <div class="col-md-6 offset-md-3">
+      <div class="input-group">
+        <input type="text" id="searchInput" class="form-control rounded-pill" placeholder="Search Products" maxlength="20" >
+        <button id="closeIcon" class="btn" type="button">
+          <i class="fa fa-close"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const closeIcon = $('#closeIcon');
+  // Function to handle focus and blur events on the search input
+  // $('#searchInput').on({
+  //   focus: function () {
+  //     $('#productList').addClass('animated fadeIn');
+  //   },
+  //   blur: function () {
+  //     $('#productList').removeClass('animated fadeIn');
+  //   }
+  // });
+
+  closeIcon.hide()
+  // Fetch data from the JSON file
+  $.getJSON('data/level1.json', function (data) {
+    // Store the fetched data in a variable
+    const searchData = data;
+
+    // Event listener for the search input
+    $('#searchInput').on('input', function () {
+      const searchTerm = $(this).val();
+
+      // Check if the search term is not empty
+      if (searchTerm.trim() !== '') {
+        const filteredData = filterData(searchTerm, searchData);
+        renderResults(filteredData);
+        closeIcon.show()
+      } else {
+        // If the search term is empty, clear the results
+        $('#searchResults').empty();
+        closeIcon.hide()
+        $('#productList .card').removeClass('visually-hidden')
+      }
+    });
+  });
+
+  // Function to filter data based on search term
+  function filterData(term, searchData) {
+    return searchData.filter(item => {
+      return item.title.toLowerCase().includes(term.toLowerCase());
+    });
+  }
+
+  // Function to render search results
+  function renderResults(results) {
+  if (results.length === 0) {
+    searchResults.append('<p>No results found.</p>');
+  } else {
+    // Add visually-hidden class to all items initially
+    $('#productList .card').addClass('visually-hidden');
+    closeIcon.show()
+
+    results.forEach(result => {
+      // Remove visually-hidden class for matched items
+      const matchedItems = $(`#productList .card:contains("${result.title}")`);
+      matchedItems.removeClass('visually-hidden');
+    });
+  }
+}
+
+closeIcon.on('click',function(){
+  $('#searchInput').val('').focus();
+  $(`#productList .card`).removeClass('visually-hidden');
+  $(this).hide();
+})
+</script>
+
+
 <div id="productList" class="row justify-content-evenly"></div>
 <script type="module">
   import {datafetch} from './js/dataFetch.js'
