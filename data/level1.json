@@ -35,6 +35,13 @@
     "points": 290000
   },
   {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00102",
+    "gds": "D00102",
+    "title": "HemoHIM *2set",
+    "price": 20650,
+    "points": 150000
+  },
+  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D90178",
     "gds": "D90178",
     "title": "ATOMY 100% PURE* SPIRULINA (India)",
@@ -75,6 +82,13 @@
     "title": "Cerabebe 3set",
     "price": 3481,
     "points": 18200
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07033",
+    "gds": "D07033",
+    "title": "Atomy Fame Eye Cream Combo (Buy 1 Get 1 Free)",
+    "price": 1675.6,
+    "points": 12300
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00351",
@@ -119,32 +133,11 @@
     "points": 7000
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00257",
-    "gds": "D00257",
-    "title": "Absolute Eye-Complex",
-    "price": 3186,
-    "points": 23200
-  },
-  {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00247",
-    "gds": "D00247",
-    "title": "Absolute Lotion",
-    "price": 2891,
-    "points": 20500
-  },
-  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00237",
     "gds": "D00237",
     "title": "Absolute Serum",
     "price": 3186,
     "points": 23100
-  },
-  {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00217",
-    "gds": "D00217",
-    "title": "Absolute Toner",
-    "price": 2891,
-    "points": 20400
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00645",
@@ -159,6 +152,13 @@
     "title": "Absolute Ampoule",
     "price": 3894,
     "points": 28600
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00207",
+    "gds": "D00207",
+    "title": "Absolute Skincare Set",
+    "price": 17228,
+    "points": 128000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00835",
@@ -329,13 +329,6 @@
     "points": 12300
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00196",
-    "gds": "D00196",
-    "title": "The Fame Lotion",
-    "price": 1675.6,
-    "points": 12300
-  },
-  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92680",
     "gds": "D92680",
     "title": "Atomy T-Shirt (S)-1N",
@@ -343,25 +336,11 @@
     "points": 0
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00194",
-    "gds": "D00194",
-    "title": "The Fame Essence",
-    "price": 1758.2,
-    "points": 13000
-  },
-  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92681",
     "gds": "D92681",
     "title": "Atomy T-Shirt (M)-1N",
     "price": 378,
     "points": 0
-  },
-  {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00192",
-    "gds": "D00192",
-    "title": "The Fame Eye Cream",
-    "price": 1675.6,
-    "points": 12300
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92676",
@@ -422,7 +401,7 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92453",
     "gds": "D92453",
-    "title": "Mini Catalog 10 Pcs-(English)- Version January 2023",
+    "title": "Mini Catalog 10 Pcs-(English)- Version Oct 2023",
     "price": 500,
     "points": 0
   },
@@ -434,11 +413,53 @@
     "points": 0
   },
   {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92405",
+    "gds": "D92405",
+    "title": "Atomy Diary",
+    "price": 531,
+    "points": 0
+  },
+  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D90501",
     "gds": "D90501",
     "title": "Atomy Toothpaste 200g x1N",
     "price": 354,
     "points": 850
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07107",
+    "gds": "D07107",
+    "title": "Atomy Health Kit",
+    "price": 15104,
+    "points": 85000
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07048",
+    "gds": "D07048",
+    "title": "Atomy Fame Lotion (Buy 1 Get 1 Free)",
+    "price": 1675.6,
+    "points": 12300
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07045",
+    "gds": "D07045",
+    "title": "Atomy Absolute Eye-Complex (Buy 1 Get 1 Free)",
+    "price": 3186,
+    "points": 23200
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07044",
+    "gds": "D07044",
+    "title": "Atomy Absolute Lotion (Buy 1 Get 1 Free)",
+    "price": 2891,
+    "points": 20500
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07043",
+    "gds": "D07043",
+    "title": "Atomy Absolute Toner (Buy 1 Get 1 Free)",
+    "price": 2891,
+    "points": 20400
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D04718",
@@ -453,13 +474,6 @@
     "title": "Adelica Waterproof Mascara - Black",
     "price": 885,
     "points": 5000
-  },
-  {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D02479",
-    "gds": "D02479",
-    "title": "ATOMY DNA (ENGLISH)",
-    "price": 850,
-    "points": 0
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D01443",

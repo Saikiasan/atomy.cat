@@ -30,6 +30,12 @@
     "gds": "D00104"
   },
   {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00102_2.jpg",
+    "title": "HemoHIM *2set",
+    "price": 30000,
+    "gds": "D00102"
+  },
+  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/90178_2.jpeg",
     "title": "ATOMY 100% PURE* SPIRULINA (India)",
     "price": 699,
@@ -64,6 +70,12 @@
     "title": "Cerabebe 3set",
     "price": 4000,
     "gds": "D00475"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07033_2.jpeg",
+    "title": "Atomy Fame Eye Cream Combo (Buy 1 Get 1 Free)",
+    "price": 2000,
+    "gds": "D07033"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00351_2.jpeg",
@@ -102,28 +114,10 @@
     "gds": "D00826"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00257_2.png",
-    "title": "Absolute Eye-Complex",
-    "price": 3700,
-    "gds": "D00257"
-  },
-  {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00247_2.png",
-    "title": "Absolute Lotion",
-    "price": 3400,
-    "gds": "D00247"
-  },
-  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00237_2.png",
     "title": "Absolute Serum",
     "price": 3700,
     "gds": "D00237"
-  },
-  {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00217_2.png",
-    "title": "Absolute Toner",
-    "price": 3300,
-    "gds": "D00217"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00645_2.jpg",
@@ -136,6 +130,12 @@
     "title": "Absolute Ampoule",
     "price": 4500,
     "gds": "D00227"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00207_2.png",
+    "title": "Absolute Skincare Set",
+    "price": 20000,
+    "gds": "D00207"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00835_2.jpg",
@@ -282,34 +282,16 @@
     "gds": "D00198"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00196_2.jpg",
-    "title": "The Fame Lotion",
-    "price": 2000,
-    "gds": "D00196"
-  },
-  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92680_2.jpeg",
     "title": "Atomy T-Shirt (S)-1N",
     "price": 378,
     "gds": "D92680"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00194_2.jpg",
-    "title": "The Fame Essence",
-    "price": 2100,
-    "gds": "D00194"
-  },
-  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92681_2.jpeg",
     "title": "Atomy T-Shirt (M)-1N",
     "price": 378,
     "gds": "D92681"
-  },
-  {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00192_2.jpg",
-    "title": "The Fame Eye Cream",
-    "price": 2000,
-    "gds": "D00192"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92676_2.jpeg",
@@ -361,7 +343,7 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92453_2.jpg",
-    "title": "Mini Catalog 10 Pcs-(English)- Version January 2023",
+    "title": "Mini Catalog 10 Pcs-(English)- Version Oct 2023",
     "price": 500,
     "gds": "D92453"
   },
@@ -372,10 +354,46 @@
     "gds": "D92445"
   },
   {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92405_2.jpeg",
+    "title": "Atomy Diary",
+    "price": 531,
+    "gds": "D92405"
+  },
+  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/90501_2.jpeg",
     "title": "Atomy Toothpaste 200g x1N",
     "price": 400,
     "gds": "D90501"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07107_2.jpg",
+    "title": "Atomy Health Kit",
+    "price": 20596,
+    "gds": "D07107"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07048_2.jpeg",
+    "title": "Atomy Fame Lotion (Buy 1 Get 1 Free)",
+    "price": 2000,
+    "gds": "D07048"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07045_2.jpeg",
+    "title": "Atomy Absolute Eye-Complex (Buy 1 Get 1 Free)",
+    "price": 3700,
+    "gds": "D07045"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07044_2.jpeg",
+    "title": "Atomy Absolute Lotion (Buy 1 Get 1 Free)",
+    "price": 3400,
+    "gds": "D07044"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07043_2.jpeg",
+    "title": "Atomy Absolute Toner (Buy 1 Get 1 Free)",
+    "price": 3300,
+    "gds": "D07043"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/04718_2.jpg",
@@ -388,12 +406,6 @@
     "title": "Adelica Waterproof Mascara - Black",
     "price": 1000,
     "gds": "D04717"
-  },
-  {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/02479_2.jpg",
-    "title": "ATOMY DNA (ENGLISH)",
-    "price": 850,
-    "gds": "D02479"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/01443_2.jpg",
