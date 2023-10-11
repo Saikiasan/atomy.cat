@@ -1,3 +1,5 @@
+import { removeData, storeData } from "./dataFetch.js";
+
 let buttonsData = [{
     bgColorItem: "#ff8c00",
     dataPage: "user",
@@ -99,7 +101,7 @@ export const clicks = () => {
       offsetActiveItem.width) / 2) + "px";
     menuBorder.css("transform", `translate3d(${left}, 0, 0)`);
   }
-  
+
   menuItems.on("click", function () {
     clickItem($(this), menuItems.index(this));
   });
@@ -112,9 +114,7 @@ export const clicks = () => {
 
 }
 
-
-export const urlCrawler = (url) => {
-  // const urlParams = new URLSearchParams(window.location.search);
+export const urlCrawler = (url, gds) => {
   const page = url || 'home';
 
   if (page) {
@@ -129,8 +129,26 @@ export const urlCrawler = (url) => {
       url: filePath,
       dataType: 'html',
       success: function (content) {
-        $('root').html(content);
+        var mainElement = $('.main');
+
+        // Fade out the main element
+        mainElement.fadeOut('fast', function () {
+          // Set the new content after fade out is complete
+          if (!gds) {
+            $('root#root').html(content);
+            removeData('gds')
+          } else {
+            $('root#root').html(content);
+            // local
+            storeData('gds',gds)
+          }
+
+          // console.log(param1)
+          // Fade in the main element
+          mainElement.fadeIn('fast');
+        });
       },
+
       error: function (status, error) {
         console.error('Error loading content:', error, status);
       }
@@ -138,4 +156,19 @@ export const urlCrawler = (url) => {
   } else {
     console.error("Missing url in url");
   }
+};
+
+
+export const productMenu = () => {
+  let v = 'visually-hidden'
+  // $('header').toggleClass(v)
+  $('#menu-con menu').addClass(v)
+  $('.product-menu').toggleClass(v).addClass('animated slideInUp fast')
+  .on('click',function(){
+    goBack()
+  })
+}
+
+export const goBack = () => {
+  urlCrawler()
 };
