@@ -1,0 +1,30 @@
+<style>
+  @media screen and (min-width: 699px) {
+    #result img {
+      width: 400px !important;
+      height: 400px !important;
+    }
+
+    #imageD1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    #imageD1 img {
+      width: 800px !important;
+    }
+  }
+</style>
+
+<div id="result" class="pb-5"></div>
+<div id="imageD1"></div>
+
+<script type="module">
+  import {details} from './js/dataFetch.js'
+  import {productMenu} from './js/nav.js'
+  details()
+  productMenu()
+</script>
