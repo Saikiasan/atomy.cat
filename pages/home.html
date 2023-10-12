@@ -6,7 +6,7 @@
   }
 
   #search-home input {
-    text-indent: 40px;
+    text-indent: 35px;
     height: 40px;
     outline: none !important;
     box-shadow: none !important;
@@ -25,10 +25,6 @@
     visibility: visible;
   }
 
-  #search-home .d-flex {
-    width: 400px;
-  }
-
   #productList .card-title {
     /* font-family: BebasNeueBold; */
     font-weight: bolder;
@@ -37,7 +33,7 @@
 </style>
 
 <div class="container shadow pt-2 fixed-top bg-info animated slideInDown fast" id="search-home">
-  <div class="d-flex py-2 align-items-center mx-auto">
+  <div class="d-flex py-2 align-items-center mx-auto px-2">
     <i class="fa fa-search"></i>
     <input type="text" id="searchInput" class="form-control rounded-pill" placeholder="Search for products..."
       maxlength="20">
@@ -48,10 +44,10 @@
 <div id="productList" class="row justify-content-evenly"></div>
 <script type="module">
   import { datafetch, searchbar } from './js/dataFetch.js'
-  // import {urlCrawler} from './js/nav.js'
   searchbar()
   datafetch()
-  // urlCrawler('product')
+  // import {urlCrawler} from './js/nav.js'
+  // urlCrawler('user')
   $('#menu-con menu').removeClass('visually-hidden')
   $('.product-menu').addClass('visually-hidden')
 </script>
