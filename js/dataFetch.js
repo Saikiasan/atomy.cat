@@ -125,11 +125,7 @@ export const datafetch = () => {
 }
 
 export const details = () => {
-  // Get the GDS code from the query parameter
-  // var urlParams = new URLSearchParams(window.location.search);
   var gdsCode = retrieveData('gds');
-  // console.log(gdsCode)
-
   if (gdsCode) {
     $.getJSON('data/level3.json', function (data) {
         // Find the data based on the GDS code
@@ -162,17 +158,12 @@ export const details = () => {
             });
           } else {
             // Handle case when no image URLs are found
-            // var resultElement = $('#result');
-            // resultElement.html('No image URLs found for the GDS code: ' + gdsCode);
           }
 
-          // Append the image to a container element
           var containerElement = $('#result');
           containerElement.append(imageElement);
         } else {
           // Handle case when GDS code is not found
-          // var resultElement = $('#result');
-          // resultElement.html('No data found for the GDS code: ' + gdsCode);
         }
       })
       .fail(function (error) {

@@ -163,6 +163,7 @@ export const productMenu = () => {
   let v = 'visually-hidden'
   // $('header').toggleClass(v)
   $('#menu-con menu').addClass(v)
+  updateViewportSettings('yes')
   $('.product-menu').toggleClass(v).addClass('animated slideInUp fast')
   .on('click',function(){
     goBack()
@@ -171,4 +172,13 @@ export const productMenu = () => {
 
 export const goBack = () => {
   urlCrawler()
+  updateViewportSettings('no')
 };
+
+// NO / YES
+export const updateViewportSettings = (content) => {
+  const viewportMeta = $('meta[name="viewport"]')
+  if (viewportMeta) {
+    viewportMeta.attr('content','width=device-width, initial-scale=1.0, user-scalable=' + content)
+  }
+}
