@@ -1,6 +1,6 @@
 import {
   urlCrawler
-} from "./nav.js";
+} from "./nav.min.js";
 
 export const datafetch = () => {
   function loadData() {
@@ -33,8 +33,8 @@ export const datafetch = () => {
   }
 
   function createCard(gds, title, price, distributorPrice, points, imageUrl) {
-    const card = $('<div>').addClass('card col-md-4 col-lg-2 m-4 border-0').attr('data-link', gds);
-    const image = $('<img>').addClass('mx-auto my-2 animated').attr({
+    const card = $('<div>').addClass('card col-md-4 col-lg-2 m-4 border-0 animated slow').attr('data-link', gds);
+    const image = $('<img>').addClass('mx-auto my-2').attr({
       'data-src': imageUrl,
       'alt': gds,
       'loading': 'lazy'
@@ -150,7 +150,7 @@ export const details = () => {
                 'data-src': imageUrl,
                 'alt': 'detailed img',
                 'loading': 'lazy'
-              }).addClass('p-1 animated').css({
+              }).addClass('p-1').css({
                 width: '100%'
               });
               containerElement1.append(imageElement);
@@ -192,18 +192,33 @@ export const clearData = () => {
 }
 
 export const observer = new IntersectionObserver(entries => {
+  const vh = 'invisible'
   entries.forEach(entry => {
     const lazyImage = $(entry.target);
+    const card = lazyImage.closest('.card');
 
     if (entry.isIntersecting) {
       // Image is in view
-      lazyImage.attr('src', lazyImage.data('src')).addClass('fadeIn');
+      lazyImage.attr('src', lazyImage.data('src'));
+
+      if (card.length) {
+        card.addClass('fadeIn').removeClass(vh);
+      } else {
+        // No card detected, add fadeIn directly to the image
+        lazyImage.addClass('fadeIn').removeClass(vh);
+      }
     } else {
       // Image is not in view
-      lazyImage.removeClass('fadeIn');
+      if (card.length) {
+        card.removeClass('fadeIn').addClass(vh);
+      } else {
+        // No card detected, remove fadeIn from the image
+        lazyImage.removeClass('fadeIn').addClass(vh);
+      }
     }
   });
 });
+
 
 export const searchbar = () => {
   const closeIcon = $('#closeIcon');

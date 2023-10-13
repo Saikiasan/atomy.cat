@@ -1,4 +1,4 @@
-import { removeData, storeData } from "./dataFetch.js";
+import { removeData, storeData } from "./dataFetch.min.js";
 
 let buttonsData = [{
     bgColorItem: "#ff8c00",
