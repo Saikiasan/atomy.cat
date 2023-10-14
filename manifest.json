@@ -25,7 +25,7 @@
   "related_applications": [],
   "permissions": [],
   "serviceworker": {
-    "src": "/atomy.cat/service-worker.js",
+    "src": "/atomy.cat/service-worker.min.js",
     "scope": "/atomy.cat/",
     "update_via_cache": "none"
   },
