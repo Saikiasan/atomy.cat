@@ -1,28 +1,44 @@
-# ATOMY.CAT
+# Atomy.Cat - Discover, Learn, and Explore
 
-> atomy.cat is hosted on `Github pages` to deploy and allow everyone to acess its contents
+Welcome to Atomy.Cat, your go-to platform for exploring Atomy products, gaining insights through tutorials, and learning step-by-step guides for various third-party applications. This Single Page Application (SPA) is designed with a mobile-friendly approach, ensuring a seamless experience for users on different devices.
 
-> The page is a SPA (single page application) that can be used for several other purposes aside from providing simple details on the products and information on the items
+## Database
 
-The following are some TODO's for the project:
+(Buyer)[./data/databaseBuyer.md]
 
-- **INFORMATIVE**
-    - [x] Atomy product - MRP | DP | PV
-    - [ ] Tutorials
-    - [ ] Step-by-step **Guides** to help understand the use of ~~third party~~ apps like `Google Meet`, `Whatsapp`
-    - [ ] Links to other `platforms` that teach the usage
+## Features
 
-## UI - mobile friendly approaches
-Mobile friendly approach is necessary to enable the users in using the application with ease and comfort without any complex task and having basic idea, anyone can use the full potential of the application
+### 1. Product Information
+Explore detailed information about Atomy products, including Market Retail Price (MRP), Distributor Price (DP), and Point Value (PV).
 
-```js
-// USAGE OF JS IN THE APPLICATION IN IMMENSE
-jQuery(function(){
-    // ALL CODES GO IN HERE
-})
+### 2. Tutorials
+Access tutorials that provide in-depth knowledge about the usage of different applications. Whether it's mastering Google Meet or navigating WhatsApp, we've got you covered.
 
-// NOTE THAT JQUERY 3.6.0 IS USED FOR THIS PROJECT
-```
+### 3. Step-by-step Guides
+Our guides simplify complex tasks, making it easy for users to navigate and make the most out of third-party applications. Enhance your digital skills effortlessly.
 
-### Goal #1
-To create a function that can automate the process of extraction and updation of the database in realtime, using the firebase database.
+### 4. Real-time Database Updates
+Stay informed with real-time updates through Firebase integration. Our database ensures that you get the latest information and insights.
+
+### 5. Mobile-Friendly UI
+Atomy.Cat is designed to be user-friendly on mobile devices, ensuring a comfortable and accessible experience for users on the go.
+
+## Usage
+
+1. **Explore Products**: Dive into the details of Atomy products.
+2. **Tutorials and Guides**: Learn from our tutorials and step-by-step guides.
+3. **Real-time Updates**: Stay informed with real-time data updates through Firebase.
+
+## How to Contribute
+
+We welcome contributions, feedback, and bug reports. Feel free to open issues or submit pull requests. Together, let's make Atomy.Cat even better!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries or collaborations, contact [Your Name] at [your@email.com].
+
+Happy exploring!
