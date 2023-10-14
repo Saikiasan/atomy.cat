@@ -4,7 +4,8 @@ Welcome to Atomy.Cat, your go-to platform for exploring Atomy products, gaining 
 
 ## Database
 
-[Buyer](./data/databaseBuyer.md)
+[Buyer](data/buyer.md)
+[Distributor](data/distributor.md)
 
 ## Features
 
