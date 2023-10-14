@@ -1,6 +1,6 @@
 jQuery(function() {
   function loadBuyerProducts() {
-    $.getJSON('data/level0.json', function(productData) {
+    $.getJSON('data/b.json', function(productData) {
       const totaldisplay = $('<div>').addClass('badge bg-danger rounded-circle p-2 m-2 position-fixed top-0 start-0 fs-5 shadow').text(productData.length).css({
         zIndex: 100
       });
@@ -32,7 +32,7 @@ jQuery(function() {
   }
 
   function loadDistributorProducts() {
-    $.getJSON('data/level1.json', function(products) {
+    $.getJSON('data/d.json', function(products) {
       const totaldisplay = $('<div>').addClass('badge bg-danger rounded-circle p-2 m-2 position-fixed top-0 start-0 fs-5 shadow').text(products.length).css({
         zIndex: 100
       });

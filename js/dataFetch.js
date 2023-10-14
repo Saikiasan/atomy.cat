@@ -5,9 +5,9 @@ import {
 export const datafetch = () => {
   function loadData() {
     // Fetch data from the first JSON file
-    $.getJSON('data/level0.json', function (productData) {
+    $.getJSON('data/b.json', function (productData) {
       // Fetch data from the second JSON file
-      $.getJSON('data/level1.json', function (distributorData) {
+      $.getJSON('data/d.json', function (distributorData) {
         processData(productData, distributorData);
       }).fail(function (error) {
         console.error('Error fetching distributor data:', error);
@@ -33,7 +33,7 @@ export const datafetch = () => {
   }
 
   function createCard(gds, title, price, distributorPrice, points, imageUrl) {
-    const card = $('<div>').addClass('card col-md-4 col-lg-2 m-4 border-0 animated slow').attr('data-link', gds);
+    const card = $('<div>').addClass('card col-md-4 col-lg-2 m-4 border-0 animated invisible').attr('data-link', gds);
     const image = $('<img>').addClass('mx-auto my-2').attr({
       'data-src': imageUrl,
       'alt': gds,
@@ -127,7 +127,7 @@ export const datafetch = () => {
 export const details = () => {
   var gdsCode = retrieveData('gds');
   if (gdsCode) {
-    $.getJSON('data/level3.json', function (data) {
+    $.getJSON('data/p.json', function (data) {
         // Find the data based on the GDS code
         var foundData = data.find(function (item) {
           return item.gds === gdsCode;
@@ -210,10 +210,10 @@ export const observer = new IntersectionObserver(entries => {
     } else {
       // Image is not in view
       if (card.length) {
-        card.removeClass('fadeIn').addClass(vh);
+        // card.removeClass('fadeIn').addClass(vh);
       } else {
         // No card detected, remove fadeIn from the image
-        lazyImage.removeClass('fadeIn').addClass(vh);
+        // lazyImage.removeClass('fadeIn').addClass(vh);
       }
     }
   });
@@ -233,7 +233,7 @@ export const searchbar = () => {
   // });
 
   // closeIcon.hide()
-  $.getJSON('data/level1.json', function (data) {
+  $.getJSON('data/d.json', function (data) {
     const searchData = data;
 
     // Event listener for the search input

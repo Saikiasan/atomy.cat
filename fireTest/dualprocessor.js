@@ -1,9 +1,9 @@
 jQuery(function () {
   function loadData() {
     // Fetch data from the first JSON file
-    $.getJSON('data/level0.json', function (productData) {
+    $.getJSON('data/b.json', function (productData) {
       // Fetch data from the second JSON file
-      $.getJSON('data/level1.json', function (distributorData) {
+      $.getJSON('data/d.json', function (distributorData) {
         processData(productData, distributorData);
       }).fail(function (error) {
         console.error('Error fetching distributor data:', error);
