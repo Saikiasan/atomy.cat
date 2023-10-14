@@ -1,11 +1,11 @@
 let localhostUrl = 'http://127.0.0.1:5500/';
 let atomyUrl = 'https://www.atomy.com/';
 
-// level0: buyer, level1: distributor, level3: productdata
+// b: buyer, d: distributor, p: productdata
 // Detailed data of the product | after login
 
 function pData() {
-  fetch('data/level1.json')
+  fetch('data/d.json')
     .then(response => response.json())
     .then(data => {
       const allResults = [];
@@ -53,7 +53,7 @@ function pData() {
           const url = URL.createObjectURL(blob);
           const link = document.createElement('a');
           link.href = url;
-          link.download = 'level3.json';
+          link.download = 'p.json';
           link.click();
           URL.revokeObjectURL(url);
         })
@@ -96,11 +96,11 @@ function distData(htmlCode) {
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
-  link.download = 'level1.json';
+  link.download = 'd.json';
   link.click();
   URL.revokeObjectURL(url);
 
-  console.log('Data written to level1.json successfully.');
+  console.log('Data written to d.json successfully.');
 }
 
 // MRP | before login = 05 july 2023
@@ -134,11 +134,11 @@ function buyerData(htmlCode) {
   // const url = URL.createObjectURL(blob);
   // const link = document.createElement('a');
   // link.href = url;
-  // link.download = 'level0.json';
+  // link.download = 'b.json';
   // link.click();
   // URL.revokeObjectURL(url);
 
-  console.log('Data written to level0.json successfully.');
+  console.log('Data written to b.json successfully.');
 }
 
 
