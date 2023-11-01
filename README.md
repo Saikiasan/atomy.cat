@@ -43,3 +43,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any inquiries or collaborations, contact [Your Name] at [your@email.com].
 
 Happy exploring!
+
+
+# Bills
+
+This is the billed amount details as for: 02-11-2023
+
+Sl.No|Details|About|Billed amount
+|:--|---|--:|--:
+1|Domain Purchase|atomykeson.online|122

@@ -9,30 +9,10 @@
   <link rel="stylesheet" href="css/toggler.min.css">
   <link rel="stylesheet" href="css/menutab.min.css">
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
- <style>@font-face{ font-family: Avalon; src: url(./data/fonts/FontsFree-Net-Avalon.ttf);} @font-face{ font-family: BebasNeue; src: url(./data/fonts/BebasNeue-Regular.ttf);} @font-face{ font-family: BebasNeueBold; src: url(./data/fonts/BebasNeue-Bold.ttf);} @font-face{ font-family: CodePro; src: url(./data/fonts/CodePro-Trial-LightLC.ttf);} @font-face{ font-family: Intro; src: url(./data/fonts/IntroCd-Trial-BkInl.ttf);} @font-face{ font-family: Archive; src: url(./data/fonts/Archive-Regular.ttf);} ::-webkit-scrollbar{ display: none;} .card-title{ font-family: Avalon, sans-serif;} .preloader{ position: fixed; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; display: flex;} .preloader .logo{ position: relative; justify-content: center; align-items: center; margin: auto; width: 200px; height: 100px;} </style>
- <script>
-   if ('serviceWorker' in navigator) {
-     navigator.serviceWorker.register('./service-worker.min.js')
-       .then((registration) => {
-         console.log('Service Worker registered with scope:', registration.scope);
-       })
-       .catch((error) => {
-         console.error('Service Worker registration failed:', error);
-       });
-   }
- </script>
- 
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-QH5HZNRTTE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-QH5HZNRTTE');
-  </script>
+  <style>@font-face{ font-family: Avalon; src: url(./data/fonts/FontsFree-Net-Avalon.ttf);} @font-face{ font-family: BebasNeue; src: url(./data/fonts/BebasNeue-Regular.ttf);} @font-face{ font-family: BebasNeueBold; src: url(./data/fonts/BebasNeue-Bold.ttf);} @font-face{ font-family: CodePro; src: url(./data/fonts/CodePro-Trial-LightLC.ttf);} @font-face{ font-family: Intro; src: url(./data/fonts/IntroCd-Trial-BkInl.ttf);} @font-face{ font-family: Archive; src: url(./data/fonts/Archive-Regular.ttf);} ::-webkit-scrollbar{ display: none;} .card-title{ font-family: Avalon, sans-serif;} .preloader{ position: fixed; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; display: flex;} .preloader .logo{ position: relative; justify-content: center; align-items: center; margin: auto; width: 200px; height: 100px;} </style>
+  <script>if ('serviceWorker' in navigator){ navigator.serviceWorker.register('./service-worker.min.js') .then((registration)=>{ console.log('Service Worker registered with scope:', registration.scope);}) .catch((error)=>{ console.error('Service Worker registration failed:', error);});} </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QH5HZNRTTE"></script>
+  <script>window.dataLayer=window.dataLayer || []; function gtag(){ dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-QH5HZNRTTE'); </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/lazyLoad.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

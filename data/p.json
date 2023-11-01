@@ -641,12 +641,12 @@
   },
   {
     "gds": "D92688",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/92688_2.jpg",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/92688_2.JPG",
     "detailImages": []
   },
   {
     "gds": "D92658",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/92658_2.jpeg",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/92658_2.jpg",
     "detailImages": []
   },
   {
@@ -697,9 +697,11 @@
     ]
   },
   {
-    "gds": "D07045",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/07045_2.jpeg",
-    "detailImages": []
+    "gds": "D07095",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/07095_2.jpeg",
+    "detailImages": [
+      "http://www.atomy.com/in/admin/userfiles/202207/7bb7ee89-8038-4adf-b22d-1a97fa91af63.png"
+    ]
   },
   {
     "gds": "D07044",
@@ -745,7 +747,7 @@
   },
   {
     "gds": "D02479",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/02479_2.jpg",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/02479_2.JPG",
     "detailImages": [
       "https://www.atomy.com/in/admin/userfiles/202305/IN_atomyDNA_1.jpg"
     ]
@@ -779,7 +781,7 @@
   },
   {
     "gds": "D00965",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00965_2.png",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00965_2.jpg",
     "detailImages": [
       "https://www.atomy.com/in/admin/userfiles/202209/Balance_life_IN_1_1.jpg"
     ]

@@ -38,15 +38,15 @@
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00104",
     "gds": "D00104",
     "title": "HemoHIM *4set",
-    "price": 40120.0,
-    "points": 290000
+    "price": 44840.0,
+    "points": 325000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00102",
     "gds": "D00102",
     "title": "HemoHIM *2set",
-    "price": 20650.0,
-    "points": 150000
+    "price": 23600.0,
+    "points": 170000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D90178",
@@ -441,11 +441,11 @@
     "points": 85000
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07045",
-    "gds": "D07045",
-    "title": "Atomy Absolute Eye-Complex (Buy 1 Get 1 Free)",
-    "price": 3186.0,
-    "points": 23200
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07095",
+    "gds": "D07095",
+    "title": "ATOMY 100% PURE* SPIRULINA (India) Offer (Buy 4 Get 1 Free)",
+    "price": 2242.0,
+    "points": 12000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07044",
@@ -619,7 +619,7 @@
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00101",
     "gds": "D00101",
     "title": "HemoHIM *1set",
-    "price": 10620.0,
-    "points": 80000
+    "price": 12449.0,
+    "points": 90000
   }
 ]
