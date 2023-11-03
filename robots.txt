@@ -1,0 +1,5 @@
+Sitemap: https://saikiasan.github.io/atomy.cat/sitemap.xml
+User-agent: *
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.css$
