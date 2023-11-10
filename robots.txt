@@ -1,5 +1,7 @@
-Sitemap: https://saikiasan.github.io/atomy.cat/sitemap.xml
 User-agent: *
+Allow: /
 Disallow: /*.json$
 Disallow: /*.js$
 Disallow: /*.css$
+Disallow: /pages/
+Sitemap: https://atomykeson.online/sitemap.xml

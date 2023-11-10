@@ -8,6 +8,9 @@
   <meta name="keywords" content="atomy, keson, atomykeson, assam atomy, sadiya atomy agent, atomy agent, atomy product information, github pages, ankit saikia, tinsukia atomy agents, atomy data, mellokits palace, atomy korea, atomy india, atomy mrp, atomy dv, atomy product listed site, atomy keson site">
   <meta name="author" content="Ankit Saikia">
   <meta name="robots" content="index, follow">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="googlebot" content="notranslate">
+  <meta name="google" content="nopagereadaloud">
   
   <!-- <meta name="google-adsense-account" content="ca-pub-6862324930552399"> -->
   
@@ -44,7 +47,21 @@
      crossorigin="anonymous"></script>
   <!-- Structured Data (JSON-LD) for Organization -->
   <script type="application/ld+json">
-    {
+    [{
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "Atomy Keson",
+      "alternateName" : "Keson",
+      "url" : "https://atomykeson.online/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://query.atomykeson.online/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },{
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [{
@@ -62,7 +79,7 @@
           "text": "<p><b>No</b>, you cannot shop from the page itself, as that is not possible, however you can go to the official atomy website for that purpose.</p>"
         }
       }]
-    }
+    }]
   </script>
 
   <script src="js/jquery.min.js"></script>
