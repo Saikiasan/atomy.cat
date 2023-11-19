@@ -1,6 +1,6 @@
-import {clicks,urlCrawler} from "./nav.min.js";
+import {urlCrawler} from "./nav.min.js";
 import { preload } from "./preloader.min.js";
 // navigation()
 preload()
-clicks()
+// clicks()
 urlCrawler()

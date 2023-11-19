@@ -1,7 +1,4 @@
-import {
-  urlCrawler
-} from "./nav.min.js";
-
+import { urlParam } from "./nav.min.js";
 export const datafetch = () => {
   function loadData() {
     // Fetch data from the first JSON file
@@ -33,10 +30,10 @@ export const datafetch = () => {
   }
 
   function createCard(gds, title, price, distributorPrice, points, imageUrl) {
-    const card = $('<div>').addClass('card col-md-4 col-lg-2 m-4 border-0 animated invisible').attr('data-link', gds);
+    const card = $('<div>').addClass('card col-10 col-lg-5 col-xxl-3 m-4 border-0 animated invisible').attr('data-link', gds);
     const image = $('<img>').addClass('mx-auto my-2').attr({
       'data-src': imageUrl,
-      'alt': gds,
+      'alt': `${title} | Atomy Keson`,
       'loading': 'lazy'
     }).css({
       width: '200px',
@@ -49,11 +46,8 @@ export const datafetch = () => {
     const priceElement = $('<p>').addClass('card-text text-primary fw-bold fs-5 mb-3').text('MRP: ₹ ' + price);
     const distributorPriceElement = $('<p>').addClass('card-text text-success fw-bolder fs-3 mb-0 pb-0').text('DP: ₹ ' + distributorPrice);
     const pointsElement = $('<p>').addClass('card-text text-danger fw-bold fs-3').text('PV: ' + points);
-    const refcard = $('<button>')
-      .attr({
-        'data-page': 'product',
-        'data-gds': gds
-      })
+    const refcard = $('<a>')
+      .attr('href',`?page=product&gds=${gds}`)
       .addClass('btn btn-primary mb-4 rounded-3 product-link')
       .text('Read Details');
 
@@ -63,13 +57,13 @@ export const datafetch = () => {
 
     observer.observe(image[0]);
 
-    refcard.on('click', function () {
-      const page = $(this).data('page')
-      const gds = $(this).data('gds')
+    // refcard.on('click', function () {
+    //   const page = $(this).data('page')
+    //   const gds = $(this).data('gds')
+    //   urlCrawler()
+    //   console.log(page + gds)
 
-      urlCrawler(page, gds)
-      // console.log(page + gds)
-    })
+    // })
 
     return card;
   }
@@ -125,7 +119,7 @@ export const datafetch = () => {
 }
 
 export const details = () => {
-  var gdsCode = retrieveData('gds');
+  var gdsCode = urlParam('gds');
   if (gdsCode) {
     $.getJSON('data/p.json', function (data) {
         // Find the data based on the GDS code
@@ -190,6 +184,22 @@ export const removeData = (key) => {
 export const clearData = () => {
   localStorage.clear()
 }
+
+export const sessionStore = (key,value) => {
+  sessionStorage.setItem(key,value)
+}
+
+export const sessionGet = (key) => {
+  // Check if the key exists in session storage
+  if (sessionStorage.getItem(key)) {
+    // Return the value associated with the key
+    return sessionStorage.getItem(key);
+  } else {
+    // Return null or a default value if the key is not found
+    return null; // or return a default value
+  }
+};
+
 
 export const observer = new IntersectionObserver(entries => {
   const vh = 'invisible'
