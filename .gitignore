@@ -3,3 +3,4 @@ backup_versions/
 testdev/
 fireTest/
 py/
+js/*.js
