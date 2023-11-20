@@ -1,9 +1,9 @@
-const CACHE_NAME = 'atomy-assam-cache-v1';
+const CACHE_NAME = 'atomy-assam-cache-v2';
 const urlsToCache = [
-  'https://saikiasan.github.io/atomy.cat/', // Add a forward slash at the end
-  'https://saikiasan.github.io/atomy.cat/index.html', // Add the full URL to the HTML files
-  'https://saikiasan.github.io/atomy.cat/404.html', // Add the full URL to the HTML files
-  'https://saikiasan.github.io/atomy.cat/data/logo/white.png',
+  'https://atomykeson.online', // Add a forward slash at the end
+  'https://atomykeson.online/home/', // Add the full URL to the HTML files
+  'https://atomykeson.online/about_me', // Add the full URL to the HTML files
+  'https://atomykeson.online/data/logo/white.png',
   // Add other static assets (stylesheets, scripts, images, etc.)
 ];
 
