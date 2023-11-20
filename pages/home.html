@@ -1,22 +1,38 @@
-<style>#search-home .fa-search{ font-size: 1.5em; position: relative; left: 35px;} #search-home input{ text-indent: 35px; height: 40px; outline: none !important; box-shadow: none !important; font-family: Archive;} .fa-close{ visibility: hidden; position: relative; right: 35px; color: #ff0000b5; font-size: 1.8em;} input:not(:placeholder-shown)~.fa-close{ visibility: visible;} #productList .card-title{ font-weight: bolder; letter-spacing: 1.5px;}
-</style>
+<style>
+  #search-home .fa-search {
+    font-size: 1.5em;
+    position: relative;
+    left: 35px;
+  }
 
-<div class="container shadow pt-2 fixed-top bg-info animated slideInDown fast" id="search-home">
-  <div class="d-flex py-2 align-items-center mx-auto px-2">
-    <i class="fa fa-search"></i>
-    <input type="text" id="searchInput" class="form-control rounded-pill" placeholder="Search for products..."
-      maxlength="20">
-    <i class="fa fa-close" id="closeIcon"></i>
-  </div>
-</div>
+  #search-home input {
+    text-indent: 30px;
+    height: auto;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  @media screen and (min-width:900px) {
+    #search-home input {
+      width: 50ch;
+    }
+  }
+
+  #productList .card-title {
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+  }
+</style>
 
 <div id="productList" class="row justify-content-evenly"></div>
 <script type="module">
-  import { datafetch, searchbar } from './js/dataFetch.min.js'
+  import { datafetch, searchbar } from '../js/dataFetch.min.js'
+
   searchbar()
   datafetch()
   // import {urlCrawler} from './js/nav.min.js'
   // urlCrawler('user')
   $('#menu-con menu').removeClass('visually-hidden')
   $('.product-menu').addClass('visually-hidden')
+  $('#search-home').toggleClass('visually-hidden')
 </script>
