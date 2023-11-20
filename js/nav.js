@@ -91,11 +91,6 @@ export const productMenu = () => {
   })
 }
 
-export const goBack = () => {
-  urlCrawler()
-  updateViewportSettings('no')
-};
-
 // NO / YES
 export const updateViewportSettings = (content) => {
   const viewportMeta = $('meta[name="viewport"]')
@@ -127,4 +122,17 @@ export const theme = (tr) => {
       b.addClass(dk)
     }
   })
+}
+
+export const currentPage = () => {
+  var currentUrl = window.location.href
+  const cUrl = currentUrl.split('/').filter(Boolean).pop()
+  return cUrl
+}
+
+export const activeLink = () => {
+  const u = currentPage()
+  const l = $(`.nav-link[href='/${u}/']`)
+  l.addClass('active')
+  console.log(u)
 }

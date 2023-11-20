@@ -38,6 +38,8 @@
   <link rel="stylesheet" href="css/menutab.min.css">
   <link rel="stylesheet" href="css/dark_knight.css">
   <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
   <style>
     @font-face {
       font-family: Avalon;
@@ -253,6 +255,7 @@
   <script src="js/lazyLoad.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -320,48 +323,77 @@
        width: var(--s);
        height: var(--s);
      }
+
+     .img-frame {
+      overflow: hidden;
+      height: 200px;
+      width: 200px;
+      border-radius: 100%;
+     }
+     .img-frame img, .owl-item img {
+      width: 200px;
+      object-fit: cover;
+      transform: translateY(var(--y)) translateX(var(--x));
+      zoom: var(--zo);
+     }
+     .owl-item {
+      height: 900px;
+      width:400px;
+     }
+     .owl-item img {
+      object-fit: cover;
+      height: auto;
+      width: 400px
+     }
    </style>
 
   <div class="main container-fluid" style="margin-top: 8em;">
     <root id="root">
-      <style>
-        #search-home .fa-search {
-          font-size: 1.5em;
-          position: relative;
-          left: 35px;
-        }
-      
-        #search-home input {
-          text-indent: 30px;
-          height: auto;
-          outline: none !important;
-          box-shadow: none !important;
-        }
-        
-        @media screen and (min-width:900px) {
-          #search-home input {
-            width: 50ch;
-          }
-        }
-      
-        #productList .card-title {
-          font-weight: bolder;
-          letter-spacing: 1.5px;
-        }
-      </style>
-      
-      <div id="productList" class="row justify-content-evenly"></div>
-      <script type="module">
-        import { datafetch, searchbar } from '../js/dataFetch.min.js'
-      
-        searchbar()
-        datafetch()
-        // import {urlCrawler} from './js/nav.min.js'
-        // urlCrawler('user')
-        $('#menu-con menu').removeClass('visually-hidden')
-        $('.product-menu').addClass('visually-hidden')
-        $('#search-home').toggleClass('visually-hidden')
-      </script>
+      <div class="row justify-content-center">
+        <div class="col col-lg-6 text-center">
+          <div class="d-flex justify-content-center mb-5">
+            <div class="img-frame">
+              <img src="data/img/img1.jpg" alt="Keson" style="--y:-90px;--x:-10px;--zo:1.2">
+            </div>
+          </div>
+          <h1 class="h1 myname" style="font-family: Intro;">KESON DUTTA</h1>
+          <p class="fs-5" style="font-family: Avalon;">Atomy has changed my lifestyle, and so will yours.It has been over a few years that I started working as an atomic agent, and now I have achieved a lot of success in life. And I want this to continue and give others the same exact opportunity that I got when I was down. So in.short, I would like you to lose this website for product and work.and voyeurvis. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item px-lg-2">
+                  <img src="data/img/img1.jpg" alt="carousel-image" class="img-fluid" style="--y:-200px;--x: 0px;--z: 0">
+                </div>
+                <div class="owl-item px-lg-2">
+                  <img src="data/img/img2.jpg" alt="carousel-image" class="img-fluid" style="--y:-200px;--x: 0px;--z: 0">
+                </div>
+                <div class="owl-item px-lg-2">
+                  <img src="data/img/img3.jpg" alt="carousel-image" class="img-fluid" style="--y:-200px;--x: 0px;--z: 0">
+                </div>
+                <div class="owl-item px-lg-2">
+                  <img src="data/img/img4.jpg" alt="carousel-image" class="img-fluid" style="--y:-200px;--x: 0px;--z: 0">
+                </div>
+                <div class="owl-item px-lg-2">
+                  <img src="data/img/img5.jpg" alt="carousel-image" class="img-fluid" style="--y:-200px;--x: 0px;--z: 0">
+                </div>
+                <div class="owl-item px-lg-2">
+                  <img src="data/img/img6.jpg" alt="carousel-image" class="img-fluid" style="--y:-200px;--x: 0px;--z: 0">
+                </div>
+                <div class="owl-item px-lg-2">
+                  <img src="data/img/img7.jpg" alt="carousel-image" class="img-fluid" style="--y:-200px;--x: 0px;--z: 0">
+                </div>
+                <div class="owl-item px-lg-2">
+                  <img src="data/img/img8.jpg" alt="carousel-image" class="img-fluid" style="--y:-200px;--x: 0px;--z: 0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </root>
     <div class="clearfix" style="width:100%;height: 20em;"></div>
   </div>
@@ -388,6 +420,27 @@
   </footer>
 
   <script type="module" src="js/main.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayHoverPause: false,
+    autoplaySpeed: 30,
+    autoplayTimeout: 5000,
+    animateOut: 'slideOutLeft',
+    animateIn: 'slideInRight',
+    margin: 10,
+    stagePadding: 10,
+    smartSpeed: 800,
+    autoHeight: true,
+    lazyLoadEager: true,
+    pullDrag: false,
+    touchDrag: true,
+    });
+    </script>
 </body>
 
 </html>
