@@ -2,9 +2,9 @@ import { urlParam } from "./nav.min.js";
 export const datafetch = () => {
   function loadData() {
     // Fetch data from the first JSON file
-    $.getJSON('data/b.json', function (productData) {
+    $.getJSON('../data/b.json', function (productData) {
       // Fetch data from the second JSON file
-      $.getJSON('data/d.json', function (distributorData) {
+      $.getJSON('../data/d.json', function (distributorData) {
         processData(productData, distributorData);
       }).fail(function (error) {
         console.error('Error fetching distributor data:', error);
@@ -47,7 +47,7 @@ export const datafetch = () => {
     const distributorPriceElement = $('<p>').addClass('card-text text-success fw-bolder fs-3 mb-0 pb-0').text('DP: ₹ ' + distributorPrice);
     const pointsElement = $('<p>').addClass('card-text text-danger fw-bold fs-3').text('PV: ' + points);
     const refcard = $('<a>')
-      .attr('href',`?page=product&gds=${gds}`)
+      .attr('href',`/product/?gds=${gds}`)
       .addClass('btn btn-primary mb-4 rounded-3 product-link')
       .text('Read Details');
 
@@ -121,24 +121,32 @@ export const datafetch = () => {
 export const details = () => {
   var gdsCode = urlParam('gds');
   if (gdsCode) {
-    $.getJSON('data/p.json', function (data) {
+    $.getJSON('../data/p.json', function (data) {
         // Find the data based on the GDS code
         var foundData = data.find(function (item) {
           return item.gds === gdsCode;
         });
 
         if (foundData) {
-          // Create an image element
-          var imageElement = $('<img>').attr('src', foundData.bannerImgUrl).addClass('mx-auto d-flex pb-5')
-            .css({
+          //name of the item - 19-11-23
+          $.getJSON('../data/b.json', function (c){
+            const n = c.find(function (p){
+              return p.gds === foundData.gds
+            })
+            
+            // Create an image element
+          var imageElement = $('<img>').attr({'src':foundData.bannerImgUrl,'alt':n.title}).addClass('mx-auto d-flex pb-5')
+          .css({
               width: '300px',
               height: '300px'
             });
 
-          //dataline
-          if (foundData.detailImages && foundData.detailImages.length > 0) {
+            const name = $('<h1>').text(n.title).addClass('title text-center')
+            
+            //dataline
+            if (foundData.detailImages && foundData.detailImages.length > 0) {
             var containerElement1 = $('#imageD1');
-
+            
             foundData.detailImages.forEach(function (imageUrl) {
               var imageElement = $('<img>').attr({
                 'data-src': imageUrl,
@@ -152,10 +160,12 @@ export const details = () => {
             });
           } else {
             // Handle case when no image URLs are found
+            console.log('no images')
           }
-
+          
           var containerElement = $('#result');
-          containerElement.append(imageElement);
+          containerElement.append(imageElement, name);
+        })
         } else {
           // Handle case when GDS code is not found
         }
@@ -167,21 +177,21 @@ export const details = () => {
 }
 
 // Storing data in localStorage
-export const storeData = (key, value) => {
+export const locStore = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
 // Retrieving data from localStorage
-export const retrieveData = (key) => {
+export const locGet = (key) => {
   const storedValue = localStorage.getItem(key);
   return storedValue ? JSON.parse(storedValue) : null;
 }
 
-export const removeData = (key) => {
+export const locRem = (key) => {
   localStorage.removeItem(key);
 }
 
-export const clearData = () => {
+export const locCls = () => {
   localStorage.clear()
 }
 
@@ -243,7 +253,7 @@ export const searchbar = () => {
   // });
 
   // closeIcon.hide()
-  $.getJSON('data/d.json', function (data) {
+  $.getJSON('../data/d.json', function (data) {
     const searchData = data;
 
     // Event listener for the search input

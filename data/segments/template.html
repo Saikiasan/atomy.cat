@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {head}
+  </head>
+<body>
+  <svg><defs><filter id="gooeyness"><feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" /><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10" result="gooeyness" /><feComposite in="SourceGraphic" in2="gooeyness" operator="atop" /></filter></defs></svg>
+  <div class="preloader visually-hidden">
+    <img src="../logo.png" alt="Logo | atomykeson-2023" class="logo">
+  </div>
+  <div class="loader visually-hidden"><span></span></div>
+  {navbar}
+  <div class="main container-fluid" style="margin-top: 8em;">
+    <root id="root">
+      {main}
+    </root>
+    <div class="clearfix" style="width:100%;height: 20em;"></div>
+  </div>
+  {footer}
+  <script type="module" src="../js/main.min.js"></script>
+</body>
+</html>
+
+<!-----------------------------------------------------------------------------
+  THIS IS THE COPYRIGHT INFO ON THE WEBPAGE - PLEASE READ THIS CAREFULLY
+
+  The webpage [atomykeson.online] or [saikiasan.github.io/atomy.cat/] are the
+  same and the files are hosted publically on the Github Pages server and follows
+  the set guidlines of Github Pages Policy.
+
+  The site is available to anyone on the internet. Copying or tempering with the
+  files in any way in order to benefit from it will lead to consequences.
+  All the available files and codes in the repository are written and coded by 
+  Ankit Saikia. If you require any information or have an issue, contact the
+  repository owner.
+------------------------------------------------------------------------------->

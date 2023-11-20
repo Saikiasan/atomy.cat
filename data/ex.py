@@ -62,7 +62,7 @@ def pdata(file_path):
                 gds = item['gds']
 
                 # Print the current URL being processed
-                print(f"Processing Item {index}: {item_name}, URL: {href_url}")
+                print(f"{index} | {item_name}")
 
                 # Retrieve banner image URL
                 banner_img_element = parser.select_one('.DetailView img')
