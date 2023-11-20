@@ -1,4 +1,4 @@
-import { removeData, storeData } from "./dataFetch.min.js";
+import { sessionStore, sessionGet } from "./dataFetch.min.js";
 
 export const clicks = () => {
   const menu = $(".menu");
@@ -52,7 +52,6 @@ export const urlCrawler = () => {
     // targetNavLink.addClass('active');
 
     const filePath = 'pages/' + page + '.html';
-    $('title').text('ATOMY - ' + page.charAt(0).toUpperCase() + page.slice(1));
 
     $.ajax({
       url: filePath,
@@ -108,4 +107,24 @@ export const updateViewportSettings = (content) => {
 export const urlParam = (value) => {
   const urlParameter = new URLSearchParams(window.location.search)
   return urlParameter.get(value)
+}
+
+export const theme = (tr) => {
+  let i = 'isDark'
+  let s = sessionGet(i)
+  let b = $('html')
+  let dk = 'dark-knight'
+  if(s){
+    b.addClass(dk)
+  }
+
+  $(tr).on('click',function(){
+    if(b.hasClass(dk)){
+      sessionStore(i,'')
+      b.removeClass(dk)
+    } else {
+      sessionStore(i,true)
+      b.addClass(dk)
+    }
+  })
 }
