@@ -20,3 +20,5 @@ css/menutab.css
 css/svg/*
 css/icons/*
 pages/
+data/*.xml
+service-worker.js
