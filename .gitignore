@@ -17,5 +17,6 @@ js/lazyLoad.js
 css/toggler.css
 css/nav4boot.css
 css/menutab.css
-css/svg/
-css/icons/
+css/svg/*
+css/icons/*
+pages/
