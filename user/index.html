@@ -37,8 +37,8 @@
   <title>ATOMY KESON | 2023</title>
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/animate.compat.css">
-  <link rel="stylesheet" href="../css/toggler.min.css">
-  <link rel="stylesheet" href="../css/menutab.min.css">
+  <link rel="stylesheet" href="../css/toggler.css">
+  <link rel="stylesheet" href="../css/menutab.css">
   <link rel="stylesheet" href="../css/dark_knight.css">
   <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
   <style>
@@ -151,7 +151,7 @@
   </style>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('../service-worker.min.js').then((registration) => {
+      navigator.serviceWorker.register('../service-worker.js').then((registration) => {
         console.log('Service Worker registered with scope:', registration.scope);
       }).catch((error) => {
         console.error('Service Worker registration failed:', error);
@@ -273,7 +273,7 @@
   <script src="../js/jquery.min.js"></script>
   <script src="../js/lazyLoad.min.js"></script>
   <script src="../js/bootstrap.bundle.min.js"></script>
-  <script src="../js/sweetalert2.all.min.js"></script>
+  <!-- <script src="../js/sweetalert2.all.min.js"></script> -->
   </head>
 <body>
   <svg><defs><filter id="gooeyness"><feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" /><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10" result="gooeyness" /><feComposite in="SourceGraphic" in2="gooeyness" operator="atop" /></filter></defs></svg>
@@ -381,7 +381,7 @@
     <a class="text-white" href="https://saikiasan.github.io/">Ankit Saikia</a>
   </div>
 </footer>
-  <script type="module" src="../js/main.min.js"></script>
+  <script type="module" src="../js/main.js"></script>
 </body>
 </html>
 
