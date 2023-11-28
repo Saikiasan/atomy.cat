@@ -1,11 +1,8 @@
 *.py
 backup_versions/
-data/pages/
-data/assets/favicon_io/
 data/assets/css/svg/
 data/assets/css/icons/
-
 data/product/*.html
-
+data/product/kr/js
 NXT/
 Scripts/
