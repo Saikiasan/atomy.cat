@@ -1,9 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /pages/
-Disallow: /testdev/
-Disallow: /py/
-Disallow: /fireTest/
-Disallow: /pages/
+Disallow: /data/
 Disallow: /backup_versions/
 Sitemap: https://atomykeson.online/sitemap.xml

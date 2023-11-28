@@ -5,12 +5,12 @@
   "scope": "/",
   "icons": [
     {
-      "src": "/data/logo/white.png",
+      "src": "data/assets/favicon_io/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/atomy.cat/data/logo/white.png",
+      "src": "data/assets/favicon_io/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -25,7 +25,7 @@
   "related_applications": [],
   "permissions": [],
   "serviceworker": {
-    "src": "/service-worker.min.js",
+    "src": "/service-worker.js",
     "scope": "/",
     "update_via_cache": "none"
   },

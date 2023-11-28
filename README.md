@@ -2,10 +2,6 @@
 
 Welcome to Atomy.Cat, your go-to platform for exploring Atomy products, gaining insights through tutorials, and learning step-by-step guides for various third-party applications. This Single Page Application (SPA) is designed with a mobile-friendly approach, ensuring a seamless experience for users on different devices.
 
-## Database
-
-[Buyer](data/buyer.md)
-[Distributor](data/distributor.md)
 
 ## Features
 
