@@ -240,6 +240,34 @@
     ]
   },
   {
+    "gds": "D00257",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00257_2.png",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_absolute_eyeC_01.gif",
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_02_11.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_03_11.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_04_10.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_05_21.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_06_10.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_07_9.gif"
+    ]
+  },
+  {
+    "gds": "D00247",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00247_2.png",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_absolute_lotion_01.gif",
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_02_9.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_03_9.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_04_8.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_05_20.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_06_8.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_07_7.gif"
+    ]
+  },
+  {
     "gds": "D00237",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00237_2.png",
     "detailImages": [
@@ -254,14 +282,17 @@
     ]
   },
   {
-    "gds": "D00645",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00645_2.jpg",
+    "gds": "D00217",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00217_2.png",
     "detailImages": [
-      "https://www.atomy.com/in/admin/userfiles/202204/IN_bodylotion_01.gif",
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_absolute_toner_01.gif",
       "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
-      "https://www.atomy.com/in/admin/userfiles/202110/bodylotion_02.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202103/bodylotion_02.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202103/bodylotion_03.jpg"
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_02_1.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_03_1.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_04_1.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_05_17.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_06_1.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202101/absolute_07_1.gif"
     ]
   },
   {
@@ -276,18 +307,6 @@
       "https://www.atomy.com/in/admin/userfiles/202101/absolute_05_18.jpg",
       "https://www.atomy.com/in/admin/userfiles/202101/absolute_07_3.gif",
       "https://www.atomy.com/in/admin/userfiles/202101/absolute_06_3.jpg"
-    ]
-  },
-  {
-    "gds": "D00207",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00207_2.png",
-    "detailImages": [
-      "https://www.atomy.com/in/admin/userfiles/202204/IN_absolute_01.gif",
-      "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
-      "https://www.atomy.com/in/admin/userfiles/202012/absolute_02_1.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202012/absolute_03_1.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202012/absolute_04_1.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202012/2.absolute_\uc81c\ud488\uad6c\uc131_in_10.jpg"
     ]
   },
   {
@@ -365,7 +384,7 @@
   },
   {
     "gds": "D00661",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00661_2.JPG",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00661_2.jpg",
     "detailImages": [
       "https://www.atomy.com/in/admin/userfiles/202204/IN_hairbody_conditioner_01.gif",
       "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
@@ -373,19 +392,8 @@
     ]
   },
   {
-    "gds": "D00651",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00651_2.jpg",
-    "detailImages": [
-      "https://www.atomy.com/in/admin/userfiles/202204/IN_hairbody_01.gif",
-      "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
-      "https://www.atomy.com/in/admin/userfiles/202011/hairbody_02.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202011/hairbody_03.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202011/hairbody_04.jpg"
-    ]
-  },
-  {
     "gds": "D00631",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00631_2.jpg",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00631_2.JPG",
     "detailImages": [
       "https://www.atomy.com/in/admin/userfiles/202204/IN_hairbody_cleanser_01_1.gif",
       "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
@@ -407,7 +415,7 @@
   },
   {
     "gds": "D00611",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00611_2.jpg",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00611_2.JPG",
     "detailImages": [
       "https://www.atomy.com/in/admin/userfiles/202204/IN_hairbody_treatment_01.gif",
       "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
@@ -571,10 +579,42 @@
     ]
   },
   {
+    "gds": "D00196",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00196_2.jpg",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_theFame_lotion_01.gif",
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_lotion_02.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_lotion_03.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_06.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_07.gif",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_08.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_09.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_10.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_11.gif"
+    ]
+  },
+  {
     "gds": "D92680",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/92680_2.jpeg",
     "detailImages": [
       "http://www.atomy.com/in/admin/userfiles/202206/WhatsApp%20Image%202022-06-01%20at%2010.43.19%20AM.jpeg"
+    ]
+  },
+  {
+    "gds": "D00194",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00194_2.jpg",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_theFame_essence_01.gif",
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_essence_02.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_essence_03.gif",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_06.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_07.gif",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_08.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_09.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_10.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_11.gif"
     ]
   },
   {
@@ -690,31 +730,10 @@
     ]
   },
   {
-    "gds": "D07107",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/07107_2.jpg",
+    "gds": "D07114",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/07114_2.jpg",
     "detailImages": [
-      "https://www.atomy.com/in/admin/userfiles/202309/Combo webiste info copy_1.jpg"
-    ]
-  },
-  {
-    "gds": "D07095",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/07095_2.jpg",
-    "detailImages": [
-      "http://www.atomy.com/in/admin/userfiles/202207/7bb7ee89-8038-4adf-b22d-1a97fa91af63.png"
-    ]
-  },
-  {
-    "gds": "D07044",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/07044_2.jpeg",
-    "detailImages": [
-      "http://www.atomy.com/in/admin/userfiles/202204/IN_absolute_lotion_01.gif",
-      "http://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
-      "http://www.atomy.com/in/admin/userfiles/202101/absolute_02_9.jpg",
-      "http://www.atomy.com/in/admin/userfiles/202101/absolute_03_9.jpg",
-      "http://www.atomy.com/in/admin/userfiles/202101/absolute_04_8.jpg",
-      "http://www.atomy.com/in/admin/userfiles/202101/absolute_05_20.jpg",
-      "http://www.atomy.com/in/admin/userfiles/202101/absolute_06_8.jpg",
-      "http://www.atomy.com/in/admin/userfiles/202101/absolute_07_7.gif"
+      "https://www.atomy.com/in/admin/userfiles/202312/IN_puerTea_3.png"
     ]
   },
   {
@@ -754,12 +773,12 @@
   },
   {
     "gds": "D00975",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00975_2.jpg",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00975_2.jpeg",
     "detailImages": [
       "https://www.atomy.com/in/admin/userfiles/202204/IN_cABlack_01.gif",
       "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
       "https://www.atomy.com/in/admin/userfiles/202108/cABlack_IN_02.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202108/cABlack_IN_03.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202402/cABlack_IN_04_2.jpg",
       "https://www.atomy.com/in/admin/userfiles/202108/cABlack_IN_04.jpg",
       "https://www.atomy.com/in/admin/userfiles/202108/cABlack_IN_05.jpg",
       "https://www.atomy.com/in/admin/userfiles/202108/cABlack_IN_06.jpg"
@@ -776,7 +795,7 @@
     "gds": "D00871",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00871_2.jpg",
     "detailImages": [
-      "http://www.atomy.com/in/admin/userfiles/202305/72e74e69-7989-406b-adba-3dc26cc14b49.jpg"
+      "https://www.atomy.com/in/admin/userfiles/202312/Fabric Softener_3.jpg"
     ]
   },
   {

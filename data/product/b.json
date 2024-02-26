@@ -114,28 +114,34 @@
     "gds": "D00826"
   },
   {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00257_2.png",
+    "title": "Absolute Eye-Complex",
+    "price": 3700.0,
+    "gds": "D00257"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00247_2.png",
+    "title": "Absolute Lotion",
+    "price": 3400.0,
+    "gds": "D00247"
+  },
+  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00237_2.png",
     "title": "Absolute Serum",
     "price": 3700.0,
     "gds": "D00237"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00645_2.jpg",
-    "title": "Body Lotion",
-    "price": 1200.0,
-    "gds": "D00645"
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00217_2.png",
+    "title": "Absolute Toner",
+    "price": 3300.0,
+    "gds": "D00217"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00227_2.png",
     "title": "Absolute Ampoule",
     "price": 4500.0,
     "gds": "D00227"
-  },
-  {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00207_2.png",
-    "title": "Absolute Skincare Set",
-    "price": 20000.0,
-    "gds": "D00207"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00835_2.jpg",
@@ -174,19 +180,13 @@
     "gds": "D00681"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00661_2.JPG",
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00661_2.jpg",
     "title": "Herbal Hair Conditioner",
     "price": 1400.0,
     "gds": "D00661"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00651_2.jpg",
-    "title": "Hair & Body Set (4 Pcs per Set)",
-    "price": 4100.0,
-    "gds": "D00651"
-  },
-  {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00631_2.jpg",
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00631_2.JPG",
     "title": "Herbal Body Cleanser",
     "price": 1000.0,
     "gds": "D00631"
@@ -198,7 +198,7 @@
     "gds": "D00861"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00611_2.jpg",
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00611_2.JPG",
     "title": "Herbal Hair Treatment",
     "price": 800.0,
     "gds": "D00611"
@@ -282,10 +282,22 @@
     "gds": "D00198"
   },
   {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00196_2.jpg",
+    "title": "The Fame Lotion",
+    "price": 2000.0,
+    "gds": "D00196"
+  },
+  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92680_2.jpeg",
     "title": "Atomy T-Shirt (S)-1N",
     "price": 378.0,
     "gds": "D92680"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00194_2.jpg",
+    "title": "The Fame Essence",
+    "price": 2100.0,
+    "gds": "D00194"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92681_2.jpeg",
@@ -372,22 +384,10 @@
     "gds": "D90501"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07107_2.jpg",
-    "title": "Atomy Health Kit",
-    "price": 20596.0,
-    "gds": "D07107"
-  },
-  {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07095_2.jpg",
-    "title": "ATOMY 100% PURE* SPIRULINA (India) Offer (Buy 4 Get 1 Free)",
-    "price": 2796.0,
-    "gds": "D07095"
-  },
-  {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07044_2.jpeg",
-    "title": "Atomy Absolute Lotion (Buy 1 Get 1 Free)",
-    "price": 3400.0,
-    "gds": "D07044"
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07114_2.jpg",
+    "title": "Atomy Pu'er Tea (Buy 2 Get 1 Free)",
+    "price": 7200.0,
+    "gds": "D07114"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/04718_2.jpg",
@@ -420,7 +420,7 @@
     "gds": "D01235"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00975_2.jpg",
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00975_2.jpeg",
     "title": "Atomy Cafe Arabica Black (50 sticks)",
     "price": 2000.0,
     "gds": "D00975"
