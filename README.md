@@ -48,3 +48,9 @@ This is the billed amount details as for: 02-11-2023
 Sl.No|Details|About|Billed amount
 |:--|---|--:|--:
 1|Domain Purchase|atomykeson.online|122
+
+# Business Model for Increased Points in Atomy official member:
+The model is simple and easy to use,
+1. The user purchases products from this site,
+2. The order is forwarded to the atomy member manually,
+3. The address, mobile_number, name, and all the other details are shared to the member through the site itself.
