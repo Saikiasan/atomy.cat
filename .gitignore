@@ -6,3 +6,4 @@ data/product/*.html
 data/product/kr/js
 NXT/
 Scripts/
+data/firebase/
