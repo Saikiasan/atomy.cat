@@ -1,0 +1,86 @@
+[debug] [2023-12-19T15:13:40.880Z] ----------------------------------------------------------------------
+[debug] [2023-12-19T15:13:40.884Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve -o 127.0.0.1
+[debug] [2023-12-19T15:13:40.885Z] CLI Version:   13.0.2
+[debug] [2023-12-19T15:13:40.885Z] Platform:      win32
+[debug] [2023-12-19T15:13:40.885Z] Node Version:  v20.10.0
+[debug] [2023-12-19T15:13:40.885Z] Time:          Tue Dec 19 2023 20:43:40 GMT+0530 (India Standard Time)
+[debug] [2023-12-19T15:13:40.886Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-19T15:13:40.890Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-12-19T15:13:41.018Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-19T15:13:41.018Z] > authorizing via signed-in user (ankitsaikia19@gmail.com)
+[debug] [2023-12-19T15:13:41.018Z] [iam] checking project atomy-4aab1 for permissions ["firebase.projects.get"]
+[debug] [2023-12-19T15:13:41.019Z] > refreshing access token with scopes: []
+[debug] [2023-12-19T15:13:41.020Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-19T15:13:41.020Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-19T15:13:41.047Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: getaddrinfo ENOTFOUND firebase-public.firebaseio.com
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2023-12-19T15:13:41.049Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2023-12-19T15:13:41.049Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------349431865991088870053597","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2023-12-19T15:13:41.050Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-12-19T15:13:41.050Z] > refreshing access token with scopes: []
+[debug] [2023-12-19T15:13:41.050Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-19T15:13:41.051Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-19T15:13:41.173Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------084426293506335804293751","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2023-12-19T15:13:41.173Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-12-19T15:13:41.187Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:142:12)
+    at refreshTokens (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:506:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:156:22)
+    at async Client.addAuthHeader (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:147:21)
+    at async Client.request (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:103:34)
+    at async getFirebaseProject (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async needProjectNumber (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\projectUtils.js:46:22)
+    at async C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:226:17
+[error] 
+[error] Error: Failed to get Firebase project atomy-4aab1. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-12-19T15:14:09.442Z] ----------------------------------------------------------------------
+[debug] [2023-12-19T15:14:09.447Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve -p 5500
+[debug] [2023-12-19T15:14:09.447Z] CLI Version:   13.0.2
+[debug] [2023-12-19T15:14:09.447Z] Platform:      win32
+[debug] [2023-12-19T15:14:09.448Z] Node Version:  v20.10.0
+[debug] [2023-12-19T15:14:09.448Z] Time:          Tue Dec 19 2023 20:44:09 GMT+0530 (India Standard Time)
+[debug] [2023-12-19T15:14:09.448Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-19T15:14:09.452Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-12-19T15:14:09.587Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-19T15:14:09.587Z] > authorizing via signed-in user (ankitsaikia19@gmail.com)
+[debug] [2023-12-19T15:14:09.588Z] [iam] checking project atomy-4aab1 for permissions ["firebase.projects.get"]
+[debug] [2023-12-19T15:14:09.589Z] > refreshing access token with scopes: []
+[debug] [2023-12-19T15:14:09.589Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-19T15:14:09.590Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-19T15:14:09.617Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: getaddrinfo ENOTFOUND firebase-public.firebaseio.com
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2023-12-19T15:14:09.619Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2023-12-19T15:14:09.619Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------457922837067548452030637","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2023-12-19T15:14:09.620Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-12-19T15:14:09.620Z] > refreshing access token with scopes: []
+[debug] [2023-12-19T15:14:09.626Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-19T15:14:09.626Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-19T15:14:09.738Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------203366585655430482051280","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: getaddrinfo ENOTFOUND www.googleapis.com
+[debug] [2023-12-19T15:14:09.738Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-12-19T15:14:09.752Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:142:12)
+    at refreshTokens (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:506:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:156:22)
+    at async Client.addAuthHeader (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:147:21)
+    at async Client.request (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:103:34)
+    at async getFirebaseProject (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async needProjectNumber (C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\projectUtils.js:46:22)
+    at async C:\Users\ankit\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:226:17
+[error] 
+[error] Error: Failed to get Firebase project atomy-4aab1. Please make sure the project exists and your account has permission to access it.
