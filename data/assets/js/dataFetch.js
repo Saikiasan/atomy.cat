@@ -24,7 +24,7 @@ export const datafetch = () => {
     productData.forEach(product => {
       const distributor = distributorData.find(distributor => distributor.gds === product.gds);
 
-      let imagePath = "data/assets/product_visuals/products/"
+      let imagePath = "../data/assets/product_visuals/products/"
       var productImg = imagePath + product.gds + ".webp"
       // console.log(productImg)
       // product.imageUrl
