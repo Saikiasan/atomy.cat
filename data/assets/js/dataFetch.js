@@ -24,7 +24,11 @@ export const datafetch = () => {
     productData.forEach(product => {
       const distributor = distributorData.find(distributor => distributor.gds === product.gds);
 
-      const card = createCard(product.gds, product.title, product.price, distributor.price, distributor.points, product.imageUrl);
+      let imagePath = "data/assets/product_visuals/products/"
+      var productImg = imagePath + product.gds + ".webp"
+      // console.log(productImg)
+      // product.imageUrl
+      const card = createCard(product.gds, product.title, product.price, distributor.price, distributor.points, productImg);
       $('#productList').append(card);
     });
   }
