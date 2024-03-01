@@ -125,7 +125,7 @@ export const datafetch = () => {
 export const details = () => {
   var gdsCode = urlParam('gds');
   if (gdsCode) {
-    $.getJSON('../data/p.json', function (data) {
+    $.getJSON('../data/product/p.json', function (data) {
         // Find the data based on the GDS code
         var foundData = data.find(function (item) {
           return item.gds === gdsCode;
@@ -133,13 +133,16 @@ export const details = () => {
 
         if (foundData) {
           //name of the item - 19-11-23
-          $.getJSON('../data/b.json', function (c){
+          $.getJSON('../data/product/b.json', function (c){
             const n = c.find(function (p){
               return p.gds === foundData.gds
             })
+          
+            const webpPath = "../data/assets/product_visuals/grouped_products/" + foundData.gds + "/"
+            var webpBanner = webpPath + "banner.webp"
             
             // Create an image element
-          var imageElement = $('<img>').attr({'src':foundData.bannerImgUrl,'alt':n.title}).addClass('mx-auto d-flex pb-5')
+          var imageElement = $('<img>').attr({'src': webpBanner,'alt':n.title}).addClass('mx-auto d-flex pb-5')
           .css({
               width: '300px',
               height: '300px'
@@ -151,17 +154,36 @@ export const details = () => {
             if (foundData.detailImages && foundData.detailImages.length > 0) {
             var containerElement1 = $('#imageD1');
             
-            foundData.detailImages.forEach(function (imageUrl) {
-              var imageElement = $('<img>').attr({
-                'data-src': imageUrl,
+          //   for (let i = 1; i <= foundData.detailImages.length; i++) {
+          //     let paddedNumber = String(i).padStart(2, '0');
+          //     let imagePath = webpPath + paddedNumber + '.webp';
+          
+          //     var imageElement = $('<img>').attr({
+          //         'data-src': imagePath,
+          //         'alt': 'detailed img',
+          //         'loading': 'lazy'
+          //     }).addClass('p-1').css({
+          //         width: '100%'
+          //     });
+          
+          //     containerElement1.append(imageElement);
+          //     observer.observe(imageElement[0]);
+          // }
+          
+          foundData.detailImages.forEach(function (img, index) {
+            let paddedNumber = String(index + 1).padStart(2, '0');
+            let imagePath = webpPath + paddedNumber + '.webp';
+            var imageElement = $('<img>').attr({
+                'data-src': imagePath,
                 'alt': 'detailed img',
                 'loading': 'lazy'
-              }).addClass('p-1').css({
+            }).addClass('p-1').css({
                 width: '100%'
-              });
-              containerElement1.append(imageElement);
-              observer.observe(imageElement[0]);
             });
+            containerElement1.append(imageElement);
+            observer.observe(imageElement[0]);
+        });
+        
           } else {
             // Handle case when no image URLs are found
             console.log('no images')

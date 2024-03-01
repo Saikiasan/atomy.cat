@@ -1,4 +1,4 @@
-import { urlParam } from "./nav.min.js"
+import { urlParam } from "./nav.js"
 
 export const metaTags = (desc,keys) => {
   const cp = urlParam('page')
