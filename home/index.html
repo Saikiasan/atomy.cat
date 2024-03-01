@@ -330,7 +330,13 @@
             <a class="nav-link" href="" id="user-nav-link"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about_me/">About me</a>
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Meeting</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/meeting/procedure_generator/">Procedure Generator</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -391,7 +397,7 @@
 
   searchbar()
   datafetch()
-  // import {urlCrawler} from './js/nav.min.js'
+  // import {urlCrawler} from './js/nav.js'
   // urlCrawler('user')
   $('#menu-con menu').removeClass('visually-hidden')
   $('.product-menu').addClass('visually-hidden')
