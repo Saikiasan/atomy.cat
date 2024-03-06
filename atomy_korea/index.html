@@ -12,7 +12,11 @@
   <meta name="google" content="nositelinkssearchbox">
   <meta name="googlebot" content="notranslate">
   <meta name="google" content="nopagereadaloud">
-
+  <meta name="last-modified" content="06-03-2024">
+  <meta name="category" content="Health Supplements">
+  <meta name="summary" content="atomykeson dedicates itself in relaying useful and healthy informations to the people">
+  
+  
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="manifest" href="../manifest.json">
 
@@ -42,7 +46,7 @@
   <link rel="stylesheet" href="../data/assets/css/dark_knight.css">
   <link rel="stylesheet" href="../data/assets/css/font-awesome/css/font-awesome.min.css">
   <style>
-    @font-face {
+    /* @font-face {
       font-family: Avalon;
       src: url(../data/assets/fonts/FontsFree-Net-Avalon.ttf);
     }
@@ -71,21 +75,35 @@
       font-family: Archive;
       src: url(../data/assets/fonts/Archive-Regular.ttf);
     }
+    */
+
+    @font-face {
+      font-family: Atomy;
+      src: url(../data/assets/fonts/Atomy_ttf/Atomy-Medium.ttf);
+    }
+
+    @font-face {
+      font-family: Lexend;
+      src: url(../data/assets/fonts/Lexend-VariableFont_wght.ttf);
+    }
 
     ::-webkit-scrollbar {
       display: none;
     }
 
-    .card-title {
+    /* .card-title {
       font-family: Archive;
     }
 
     .navbar-brand {
       font-family: Avalon;
+    } */
+
+    *{
+      font-family: Atomy;
     }
 
-    .preloader,
-    .loader {
+    .loader, .preloader {
       position: fixed;
       top: 0;
       left: 0;
@@ -95,7 +113,6 @@
       display: flex;
     }
 
-    .preloader .logo,
     .loader span {
       position: relative;
       justify-content: center;
@@ -105,7 +122,7 @@
       height: 100px;
     }
 
-    .loader {
+    .loader, .preloader {
       background: #ffffff;
       z-index: 2000;
       transition: all .5s ease-in-out;
@@ -123,6 +140,20 @@
       height: 100px;
       -webkit-animation: animate-preloader 1s linear infinite;
       animation: animate-preloader 1s linear infinite;
+    }
+
+    .preloader div {
+      background: #ffffff;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 2em;
+      color: #00b5ef;
+    }
+    .preloader span:nth-child(1) {
+      font-family: Lexend;
+      font-size: 1.3em;
     }
 
     @-webkit-keyframes animate-preloader {
@@ -277,10 +308,13 @@
   </head>
 <body>
   <svg><defs><filter id="gooeyness"><feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" /><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10" result="gooeyness" /><feComposite in="SourceGraphic" in2="gooeyness" operator="atop" /></filter></defs></svg>
-  <div class="preloader visually-hidden">
-    <img src="../logo.png" alt="Logo | atomykeson-2023" class="logo">
+  <div class="preloader">
+    <div class="extract">
+      <span>atom</span><span>美</span>
+    </div>
+    <!-- <img src="../logo.png" alt="Logo | atomykeson-2023" class="logo"> -->
   </div>
-  <div class="loader visually-hidden"><span></span></div>
+  <!-- <div class="loader visually-hidden"><span></span></div> -->
     <div class="d-flex bg-danger justify-content-between pb-1 px-2 visually-hidden" id="topInfo">
     <div class="updatedtext"><span class="fw-bold"><i data-feather="arrow-up-circle" width="1.2em"
           stroke-width="2pt"></i>&nbsp;&nbsp;Date updated : 11-07-2023</span></div><button class="btn p-0 m-0"
@@ -414,7 +448,7 @@
     <a class="text-white" href="https://saikiasan.github.io/">Ankit Saikia</a>
   </div>
 </footer>
-  <script type="module" src="../data/assets/js/main.js"></script>
+  <script type="module" src="../data/assets/js/m.js"></script>
 </body>
 </html>
 
@@ -430,4 +464,6 @@
   All the available files and codes in the repository are written and coded by 
   Ankit Saikia. If you require any information or have an issue, contact the
   repository owner.
+
+  Last update on: 06-03-2024
 ------------------------------------------------------------------------------->
