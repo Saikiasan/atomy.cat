@@ -1,3 +1,0 @@
-class Render {
-  static create
-}

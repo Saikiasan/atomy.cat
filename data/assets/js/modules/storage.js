@@ -1,28 +1,30 @@
-class Storage {
-  static localStorage(key, value) {
-    localStorage.setItem(key, JSON.stringify(value))
+export class Storage {
+  static setLocal(k, v) {
+    localStorage.setItem(k, JSON.stringify(v))
   }
 
-  static localStorage(key) {
-    const storedValue = localStorage.getItem(key)
-    return storedValue ? JSON.parse(storedValue) : null
+  static getLocal(k) {
+    storedVal = localStorage.getItem(k)
+    return storedVal ? JSON.parse(storedVal) : null
   }
 
-  static removeLocalStorage(key) {
-    localStorage.removeItem(key)
+  static removeLocal(k) {
+    localStorage.removeItem(k)
   }
 
-  static clearLocalStorage() {
+  static clearLocal() {
     localStorage.clear()
   }
 
-  static sessionStorage(key, value) {
-    sessionStorage.setItem(key, value);
+  static setSession(k, v) {
+    sessionStorage.setItem(k, v)
   }
 
-  static sessionStorage(key) {
-    return sessionStorage.getItem(key);
+  static getSession(k) {
+    if (sessionStorage.getItem(k)) {
+      return sessionStorage.getItem(k)
+    } else {
+      return null
+    }
   }
 }
-
-export default Storage
