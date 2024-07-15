@@ -1,15 +1,27 @@
 [
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00511_2.JPG",
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00511_2.jpg",
     "title": "Compact Toothbrush 8N",
-    "price": 1000.0,
+    "price": 1050.0,
     "gds": "D00511"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00510_2.jpg",
     "title": "Toothbrush 8N",
-    "price": 1000.0,
+    "price": 1050.0,
     "gds": "D00510"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/01513_2.jpg",
+    "title": "Atomy Absolute 24K Gold Night Mask",
+    "price": 3100.0,
+    "gds": "D01513"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/01507_2.jpg",
+    "title": "Atomy Absolute Reset Balm",
+    "price": 1200.0,
+    "gds": "D01507"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00620_2.jpg",
@@ -48,12 +60,6 @@
     "gds": "D90178"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00833_2.jpeg",
-    "title": "Latex Gloves(M) - 2 Pair",
-    "price": 800.0,
-    "gds": "D00833"
-  },
-  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00281_2.jpeg",
     "title": "Sunscreen SPF50+ PA+++(Beige )",
     "price": 900.0,
@@ -66,16 +72,16 @@
     "gds": "D00003"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00160_2.jpg",
-    "title": "Atomy Nutraceutical Mix",
-    "price": 4500.0,
-    "gds": "D00160"
-  },
-  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00475_2.jpg",
     "title": "Cerabebe 3set",
     "price": 4000.0,
     "gds": "D00475"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00474_2.jpg",
+    "title": "Atomy Cerabebe Shampoo & Bath",
+    "price": 1300.0,
+    "gds": "D00474"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00351_2.jpeg",
@@ -144,6 +150,12 @@
     "gds": "D00227"
   },
   {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00207_2.png",
+    "title": "Absolute Skincare Set",
+    "price": 20000.0,
+    "gds": "D00207"
+  },
+  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00835_2.jpg",
     "title": "Stainless Scrubber 2N",
     "price": 400.0,
@@ -204,12 +216,6 @@
     "gds": "D00611"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00755_2.jpeg",
-    "title": "Hydra Brightening  capsule essence",
-    "price": 1600.0,
-    "gds": "D00755"
-  },
-  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00601_2.jpg",
     "title": "Herbal Hair Shampoo",
     "price": 1200.0,
@@ -262,6 +268,12 @@
     "title": "Evening Care Deep Cleanser",
     "price": 900.0,
     "gds": "D00321"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00768_2.jpg",
+    "title": "A.C. Expert System Set",
+    "price": 6300.0,
+    "gds": "D00768"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00301_2.jpg",
@@ -348,22 +360,10 @@
     "gds": "D92658"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92619_2.jpg",
-    "title": "Hindi Pamphlet Foldable- Version 2023 (25 pcs per pack)",
-    "price": 200.0,
-    "gds": "D92619"
-  },
-  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92618_2.jpg",
-    "title": "English Pamphlet Foldable- Version 2023 (25 pcs per pack)",
-    "price": 200.0,
+    "title": "English Pamphlet Foldable- Version 2024 (25 pcs per pack)",
+    "price": 210.0,
     "gds": "D92618"
-  },
-  {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92453_2.jpg",
-    "title": "Mini Catalog 10 Pcs-(English)- Version Oct 2023",
-    "price": 500.0,
-    "gds": "D92453"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92445_2.jpeg",
@@ -384,16 +384,16 @@
     "gds": "D90501"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07114_2.jpg",
-    "title": "Atomy Pu'er Tea (Buy 2 Get 1 Free)",
-    "price": 7200.0,
-    "gds": "D07114"
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07116_2.jpg",
+    "title": "Atomy 360 Degree Health Combo*",
+    "price": 12999.0,
+    "gds": "D07116"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/04718_2.jpg",
-    "title": "Adelica Waterproof Mascara - Brown",
-    "price": 1000.0,
-    "gds": "D04718"
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07115_2.jpg",
+    "title": "Atomy Korean Beauty Pack",
+    "price": 3200.0,
+    "gds": "D07115"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/04717_2.jpg",
@@ -468,10 +468,22 @@
     "gds": "D00757"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00553_2.JPG",
-    "title": "Cleansing Travel Kit (6pcs per set)",
-    "price": 1500.0,
-    "gds": "D00553"
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00488_2.jpg",
+    "title": "Atomy Sugar Body Scrub",
+    "price": 1400.0,
+    "gds": "D00488"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00487_2.jpg",
+    "title": " Atomy Salt Body Scrub",
+    "price": 1400.0,
+    "gds": "D00487"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00482_2.jpg",
+    "title": "Atomy Deep Pure Cleansing Oil",
+    "price": 2100.0,
+    "gds": "D00482"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00467_2.jpg",
@@ -490,6 +502,12 @@
     "title": "Atomy Daily Expert Mask Moisturizing",
     "price": 1300.0,
     "gds": "D00465"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00400_2.jpg",
+    "title": "Atomy Lip Glow",
+    "price": 1200.0,
+    "gds": "D00400"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00295_2.jpg",

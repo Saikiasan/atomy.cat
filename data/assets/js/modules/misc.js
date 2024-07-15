@@ -56,6 +56,10 @@ export class Saikia {
     return url_param.get(p)
   }
 
+  static sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms))
+  }
+
 }
 
 // CLASS THAT CONTAINS FUNCTIONS FOR SCREEN CHECKS
@@ -122,13 +126,14 @@ export class UI {
     })
   }
 
-  static preload() {
+  static async preload() {
     const status = Storage.getSession('preloader')
     if (!status) {
-      // console.log('hi')
-      $('.preloader').toggleClass(Saikia._vh)
+      console.log('hi')
+      // $('.preloader').toggleClass(Saikia._vh)
+      await Saikia.sleep(1000)
       if ($('.preloader').length) {
-        $('.preloader').delay(500).fadeOut('fast').promise().then(function () {
+        $('.preloader').delay(1500).fadeOut('slow').promise().then(function () {
           $(this).detach()
           // MENU
           // $('#menu-con').toggleClass('visually-hidden')
@@ -136,11 +141,11 @@ export class UI {
           Storage.setSession('preloader', true)
         })
       }
-    } 
-    else {
+    } else {
       // console.log('ye')
       const loader = $('.preloader')
-      loader.toggleClass(Saikia._vh)
+      // loader.toggleClass(Saikia._vh)
+      await Saikia.sleep(1000)
       if (loader.length) {
         loader.delay(500).fadeOut('slow').promise().then(function () {
           $(this).detach()

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /data/
 Disallow: /backup_versions/
-Sitemap: https://atomykeson.online/sitemap.xml
+Sitemap: https://atomykeson.online/sitemap_pages.xml, https://atomykeson.online/sitemap_products.xml

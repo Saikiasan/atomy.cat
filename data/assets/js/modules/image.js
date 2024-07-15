@@ -9,7 +9,7 @@ export class ImagePath{
 export class Image{
   // RETURN IMAGE FOR THE INDIVIDUAL PRODUCT MENU
   static product(a){
-    return ImagePath.product + a + ImagePath.extention
+    return ImagePath.product_info + a + '/banner' + ImagePath.extention
   }
 
   // RETURNS THE BANNER IMAGE FOR THE SELECTED PRODUCT

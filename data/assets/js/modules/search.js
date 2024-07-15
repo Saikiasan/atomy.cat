@@ -1,4 +1,5 @@
 import {Data} from './data.js'
+import {Saikia} from './misc.js'
 
 export class Search {
   static clsBtn = $('#closeIcon')
@@ -9,11 +10,25 @@ export class Search {
         const searchTerm = $(this).val()
         if(searchTerm.trim() !== ''){
           const filteredData = Search.filterData(searchTerm, searchData)
-          showSearchResults(filteredData)
+          Search.showSearchResults(filteredData)
         } else {
           $('#productList .card').removeClass('visually-hidden')
         }
       })
+    })
+  }
+
+  static showSearchField(el){
+    let searchField = '#search-home'
+    let navBrand = '.navbar-brand'
+    let vh = Saikia._vh
+    $(el).on('click', function(){
+      
+      // console.log(el)
+      // when el is clicked, display the search form, hide the logo - animate the transitions
+      $(navBrand).addClass('animated fadeOutLeft fast')
+        $(navBrand).fadeOut()
+        $(searchField).toggleClass(vh).addClass('animated fadeInLeft').fadeIn()
     })
   }
 
@@ -38,6 +53,7 @@ export class Search {
       });
     }
   }
+
 }
 
 Search.clsBtn.on('click', function(){

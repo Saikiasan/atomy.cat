@@ -5,6 +5,7 @@ import {
   Image,
   ImagePath
 } from './image.js'
+import { Alertify } from './alertify.js'
 
 export class Data {
   // ROOT VARIABLES FOR THE CLASS
@@ -13,16 +14,52 @@ export class Data {
   static productJsonData = '../data/product/p.json'
 
   // LOADS THE JSON FILES FOR COMPARISON OF DATA IN EACH JSON AND FETCH THE EXACT SAME PRODUCT
-  static loadData() {
+  static loadData(sort = false, order, type) {
     $.getJSON(Data.buyerJsonData, function (productData) {
       $.getJSON(Data.distributorJsonData, function (distributorData) {
-        Data.processData(productData, distributorData)
+        if (sort) {
+          // console.log('s')
+          Data.sortAndDisplay(productData, distributorData, type, order); // Example sorting by MRP in descending order
+        } else {
+          // console.log('p')
+          // Alertify.saFire()
+          Data.processData(productData, distributorData)
+        }
       }).fail(function (error) {
         console.error('Error fetching distributor data:', error)
       })
     }).fail(function (error) {
       console.error('Error fetching Buyer\'s data:', error)
     })
+  }
+
+  static sortAndDisplay(productData, distributorData, sortType, sortOrder) {
+    // Sort productData based on sortType and sortOrder
+    productData.sort((a, b) => {
+      const distributorA = distributorData.find(distributor => distributor.gds === a.gds);
+      const distributorB = distributorData.find(distributor => distributor.gds === b.gds);
+
+      if (distributorA && distributorB) {
+        switch (sortType) {
+          case '0': // Sort by DP
+            return sortOrder === 'asc' ? distributorA.price - distributorB.price : distributorB.price - distributorA.price;
+          case '1': // Sort by MRP
+            return sortOrder === 'asc' ? distributorA.price - distributorB.price : distributorB.price - distributorA.price;
+          case '2': // Sort by PV
+            return sortOrder === 'asc' ? distributorA.points - distributorB.points : distributorB.points - distributorA.points;
+          default:
+            return 0; // No sorting
+        }
+      } else {
+        return 0; // No sorting if distributor data is not available for both products
+      }
+    });
+    $('#productList').empty();
+    productData.forEach(product => {
+      const distributor = distributorData.find(distributor => distributor.gds === product.gds);
+      const card = Data.createCard(product.gds, product.title, product.price, distributor.price, distributor.points, Image.product(product.gds));
+      $('#productList').append(card);
+    });
   }
 
   // COMBINES THE DATA FROM BOTH JSON FILES AND DISPLAYS IT TO THE USER
@@ -135,8 +172,24 @@ export class Data {
     }
   }
 
+  // sort by -s- , order?= o
+  // s=> 0=dp, 1=mrp, 2=pv
+  // high to low : 1, low to high: 0
+  // sort by then get the order and return result
+  static sortResults(s, o) {
+    // console.log('i got', s, o)
+    // empty the appended product view
+    Data.loadData(true, o, s)
+
+  }
 }
 
-Data.loadData()
+// Data.loadData()
 
-// export default Data
+// Data.sortResults(1)
+
+// TODO: MAKE CHANGES TO THE LIFECYCLE TO DO THE FOLLOWING
+/* 
+LOAD FIRST 2 DATA INTO THE HTML
+LOAD OTHERS ACCORDINGLY FOLLOWING THE VIEW OBSERVER 
+*/

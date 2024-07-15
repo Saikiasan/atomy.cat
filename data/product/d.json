@@ -3,15 +3,29 @@
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00511",
     "gds": "D00511",
     "title": "Compact Toothbrush 8N",
-    "price": 826.0,
-    "points": 5000
+    "price": 885.0,
+    "points": 5500
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00510",
     "gds": "D00510",
     "title": "Toothbrush 8N",
-    "price": 885.0,
-    "points": 6000
+    "price": 900.0,
+    "points": 6200
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D01513",
+    "gds": "D01513",
+    "title": "Atomy Absolute 24K Gold Night Mask",
+    "price": 2714.0,
+    "points": 18000
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D01507",
+    "gds": "D01507",
+    "title": "Atomy Absolute Reset Balm",
+    "price": 1062.0,
+    "points": 7000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00620",
@@ -56,13 +70,6 @@
     "points": 3000
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00833",
-    "gds": "D00833",
-    "title": "Latex Gloves(M) - 2 Pair",
-    "price": 696.2,
-    "points": 2300
-  },
-  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00281",
     "gds": "D00281",
     "title": "Sunscreen SPF50+ PA+++(Beige )",
@@ -77,18 +84,18 @@
     "points": 60000
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00160",
-    "gds": "D00160",
-    "title": "Atomy Nutraceutical Mix",
-    "price": 3894.0,
-    "points": 22000
-  },
-  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00475",
     "gds": "D00475",
     "title": "Cerabebe 3set",
     "price": 3481.0,
     "points": 18200
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00474",
+    "gds": "D00474",
+    "title": "Atomy Cerabebe Shampoo & Bath",
+    "price": 1121.0,
+    "points": 5900
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00351",
@@ -168,6 +175,13 @@
     "points": 28600
   },
   {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00207",
+    "gds": "D00207",
+    "title": "Absolute Skincare Set",
+    "price": 17228.0,
+    "points": 128000
+  },
+  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00835",
     "gds": "D00835",
     "title": "Stainless Scrubber 2N",
@@ -238,13 +252,6 @@
     "points": 3700
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00755",
-    "gds": "D00755",
-    "title": "Hydra Brightening  capsule essence",
-    "price": 1345.2,
-    "points": 9700
-  },
-  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00601",
     "gds": "D00601",
     "title": "Herbal Hair Shampoo",
@@ -306,6 +313,13 @@
     "title": "Evening Care Deep Cleanser",
     "price": 755.2,
     "points": 3500
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00768",
+    "gds": "D00768",
+    "title": "A.C. Expert System Set",
+    "price": 5133.0,
+    "points": 37000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00301",
@@ -406,24 +420,10 @@
     "points": 0
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92619",
-    "gds": "D92619",
-    "title": "Hindi Pamphlet Foldable- Version 2023 (25 pcs per pack)",
-    "price": 200.0,
-    "points": 0
-  },
-  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92618",
     "gds": "D92618",
-    "title": "English Pamphlet Foldable- Version 2023 (25 pcs per pack)",
-    "price": 200.0,
-    "points": 0
-  },
-  {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92453",
-    "gds": "D92453",
-    "title": "Mini Catalog 10 Pcs-(English)- Version Oct 2023",
-    "price": 500.0,
+    "title": "English Pamphlet Foldable- Version 2024 (25 pcs per pack)",
+    "price": 210.0,
     "points": 0
   },
   {
@@ -448,18 +448,18 @@
     "points": 850
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07114",
-    "gds": "D07114",
-    "title": "Atomy Pu'er Tea (Buy 2 Get 1 Free)",
-    "price": 6372.0,
-    "points": 34000
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07116",
+    "gds": "D07116",
+    "title": "Atomy 360 Degree Health Combo*",
+    "price": 9999.0,
+    "points": 70000
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D04718",
-    "gds": "D04718",
-    "title": "Adelica Waterproof Mascara - Brown",
-    "price": 885.0,
-    "points": 5000
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07115",
+    "gds": "D07115",
+    "title": "Atomy Korean Beauty Pack",
+    "price": 2500.0,
+    "points": 12800
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D04717",
@@ -546,11 +546,25 @@
     "points": 19800
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00553",
-    "gds": "D00553",
-    "title": "Cleansing Travel Kit (6pcs per set)",
-    "price": 1309.8,
-    "points": 4800
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00488",
+    "gds": "D00488",
+    "title": "Atomy Sugar Body Scrub",
+    "price": 1180.0,
+    "points": 6800
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00487",
+    "gds": "D00487",
+    "title": " Atomy Salt Body Scrub",
+    "price": 1180.0,
+    "points": 6800
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00482",
+    "gds": "D00482",
+    "title": "Atomy Deep Pure Cleansing Oil",
+    "price": 1799.5,
+    "points": 9000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00467",
@@ -571,6 +585,13 @@
     "gds": "D00465",
     "title": "Atomy Daily Expert Mask Moisturizing",
     "price": 1109.2,
+    "points": 5000
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00400",
+    "gds": "D00400",
+    "title": "Atomy Lip Glow",
+    "price": 1003.0,
     "points": 5000
   },
   {
