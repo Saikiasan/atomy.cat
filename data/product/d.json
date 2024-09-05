@@ -16,16 +16,9 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D01513",
     "gds": "D01513",
-    "title": "Atomy Absolute 24K Gold Night Mask",
+    "title": "Atomy Absolute 24K Gold Night\n                                        Mask",
     "price": 2714.0,
     "points": 18000
-  },
-  {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D01507",
-    "gds": "D01507",
-    "title": "Atomy Absolute Reset Balm",
-    "price": 1062.0,
-    "points": 7000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00620",
@@ -44,7 +37,7 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00183",
     "gds": "D00183",
-    "title": "Atomy Pomegranate Mixed Fruit Jelly",
+    "title": "Atomy Pomegranate Mixed Fruit\n                                        Jelly",
     "price": 6401.5,
     "points": 35000
   },
@@ -65,23 +58,30 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D90178",
     "gds": "D90178",
-    "title": "ATOMY 100% PURE* SPIRULINA (India)",
+    "title": "ATOMY 100% PURE* SPIRULINA\n                                        (India)",
     "price": 560.5,
     "points": 3000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00281",
     "gds": "D00281",
-    "title": "Sunscreen SPF50+ PA+++(Beige )",
+    "title": "Sunscreen SPF50+ PA+++(Beige\n                                        )",
     "price": 755.2,
     "points": 3500
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00003",
     "gds": "D00003",
-    "title": "The Fame Skincare Set (5 Pcs per Set)",
+    "title": "The Fame Skincare Set (5 Pcs\n                                        per Set)",
     "price": 7906.0,
     "points": 60000
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00160",
+    "gds": "D00160",
+    "title": "Atomy Nutraceutical Mix",
+    "price": 3894.0,
+    "points": 22000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00475",
@@ -93,14 +93,14 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00474",
     "gds": "D00474",
-    "title": "Atomy Cerabebe Shampoo & Bath",
+    "title": "Atomy Cerabebe Shampoo &\n                                        Bath",
     "price": 1121.0,
     "points": 5900
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00351",
     "gds": "D00351",
-    "title": "Evening Care Set(4 Pcs per Set)",
+    "title": "Evening Care Set(4 Pcs per\n                                        Set)",
     "price": 2855.6,
     "points": 13500
   },
@@ -114,14 +114,14 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00271",
     "gds": "D00271",
-    "title": "Sunscreen SPF50+ PA+++(White )",
+    "title": "Sunscreen SPF50+ PA+++(White\n                                        )",
     "price": 755.2,
     "points": 3500
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00266",
     "gds": "D00266",
-    "title": "Healthy Glow Base SPF30 PA++",
+    "title": "Healthy Glow Base SPF30\n                                        PA++",
     "price": 1168.2,
     "points": 6000
   },
@@ -252,6 +252,13 @@
     "points": 3700
   },
   {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00755",
+    "gds": "D00755",
+    "title": "Hydra Brightening capsule\n                                        essence",
+    "price": 1345.2,
+    "points": 9700
+  },
+  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00601",
     "gds": "D00601",
     "title": "Herbal Hair Shampoo",
@@ -261,7 +268,7 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00756",
     "gds": "D00756",
-    "title": "Hydra Brightening  cream",
+    "title": "Hydra Brightening cream",
     "price": 1345.2,
     "points": 9700
   },
@@ -406,23 +413,16 @@
     "points": 0
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92688",
-    "gds": "D92688",
-    "title": "Atomy Pamphlet Food & Health Products only (100 pcs per pack)",
-    "price": 200.0,
-    "points": 0
-  },
-  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92658",
     "gds": "D92658",
-    "title": "Atomy Life Scenario (Including Moment of Truth)",
+    "title": "Atomy Life Scenario (Including\n                                        Moment of Truth)",
     "price": 150.0,
     "points": 0
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92618",
     "gds": "D92618",
-    "title": "English Pamphlet Foldable- Version 2024 (25 pcs per pack)",
+    "title": "English Pamphlet Foldable-\n                                        Version 2024 (25 pcs per pack)",
     "price": 210.0,
     "points": 0
   },
@@ -450,7 +450,7 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07116",
     "gds": "D07116",
-    "title": "Atomy 360 Degree Health Combo*",
+    "title": "Atomy 360 Degree Health\n                                        Combo*",
     "price": 9999.0,
     "points": 70000
   },
@@ -464,7 +464,7 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D04717",
     "gds": "D04717",
-    "title": "Adelica Waterproof Mascara - Black",
+    "title": "Adelica Waterproof Mascara -\n                                        Black",
     "price": 885.0,
     "points": 5000
   },
@@ -478,30 +478,23 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D01443",
     "gds": "D01443",
-    "title": "Synergy Ampoule Program *1 set",
+    "title": "Synergy Ampoule Program *1\n                                        set",
     "price": 6844.0,
     "points": 50000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D01235",
     "gds": "D01235",
-    "title": "Atomy Homme Energizing All In One",
+    "title": "Atomy Homme Energizing All In\n                                        One",
     "price": 1711.0,
     "points": 12000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00975",
     "gds": "D00975",
-    "title": "Atomy Cafe Arabica Black (50 sticks)",
+    "title": "Atomy Cafe Arabica Black (50\n                                        sticks)",
     "price": 1652.0,
     "points": 3000
-  },
-  {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00965",
-    "gds": "D00965",
-    "title": "Atomy Balance Life",
-    "price": 6254.0,
-    "points": 25000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00871",
@@ -513,7 +506,7 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00838",
     "gds": "D00838",
-    "title": "Atomy 365 Anti Droplet Face Mask (50 sheet)",
+    "title": "Atomy 365 Anti Droplet Face\n                                        Mask (50 sheet)",
     "price": 2625.0,
     "points": 9000
   },
@@ -527,7 +520,7 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00808",
     "gds": "D00808",
-    "title": "Atomy Anti Pollution Mask [KF94]  (5 pcs)",
+    "title": "Atomy Anti Pollution Mask\n                                        [KF94] (5 pcs)",
     "price": 651.0,
     "points": 3000
   },
@@ -541,7 +534,7 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00757",
     "gds": "D00757",
-    "title": "Hydra Brightening Care Set (2 Pcs per Set)",
+    "title": "Hydra Brightening Care Set (2\n                                        Pcs per Set)",
     "price": 2596.0,
     "points": 19800
   },
@@ -562,28 +555,21 @@
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00482",
     "gds": "D00482",
-    "title": "Atomy Deep Pure Cleansing Oil",
+    "title": "Atomy Deep Pure Cleansing\n                                        Oil",
     "price": 1799.5,
     "points": 9000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00467",
     "gds": "D00467",
-    "title": "Atomy Daily Expert Mask Firming",
+    "title": "Atomy Daily Expert Mask\n                                        Firming",
     "price": 1109.2,
     "points": 5000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00466",
     "gds": "D00466",
-    "title": "Atomy Daily Expert Mask  Brightening",
-    "price": 1109.2,
-    "points": 5000
-  },
-  {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00465",
-    "gds": "D00465",
-    "title": "Atomy Daily Expert Mask Moisturizing",
+    "title": "Atomy Daily Expert Mask\n                                        Brightening",
     "price": 1109.2,
     "points": 5000
   },
@@ -593,13 +579,6 @@
     "title": "Atomy Lip Glow",
     "price": 1003.0,
     "points": 5000
-  },
-  {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00295",
-    "gds": "D00295",
-    "title": "Atomy Rose Rain Mist",
-    "price": 1091.5,
-    "points": 5200
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00286",

@@ -46,6 +46,7 @@
             .whatsapp-message #content-output {
                 white-space: pre-line;
                 line-height: 1.5;
+                user-select: text;
             }
 
             .btn-copy {
@@ -83,7 +84,7 @@
 
     <body>
         <div class="mt-4 d-flex justify-content-around align-items-center sticky-top bg-c py-3">
-            <button class="btn btn-outline-dark" disabled>Version: 0.1.1</button>
+            <button class="btn btn-outline-dark" disabled>Version: 0.1.2</button>
             <button id="switch-lang" class="btn btn-secondary">Switch to Assamese</button>
         </div>
         <!-- <div class="language-switch position-absolute top-0 end-0 me-4 mt-4">
@@ -188,6 +189,89 @@
                             <input type="text" class="form-control" id="userAddr" placeholder="Enter your Address">
                         </div>
 
+                        <div id="night-form">
+                            <!-- leader -->
+                            <div id="person-1" class="mb-4 p-4">
+                                <div class="person-name mb-2">
+                                    <label class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#person-fill"></use>
+                                        </svg><span>Leader Name</span>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="person-addr mb-2">
+                                    <label class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#house-fill"></use>
+                                        </svg>
+                                        <span>Address</span>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div id="person-2" class="mb-4 p-4">
+                                <div class="person-name mb-2">
+                                    <label class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#person-fill"></use>
+                                        </svg><span>PDF Reading</span>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="person-addr mb-2">
+                                    <label class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#house-fill"></use>
+                                        </svg>
+                                        <span>Address</span>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div id="person-3" class="mb-4 p-4">
+                                <div class="person-name mb-2">
+                                    <label class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#person-fill"></use>
+                                        </svg><span>Product Duscussion</span>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="person-addr mb-2">
+                                    <label class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#house-fill"></use>
+                                        </svg>
+                                        <span>Address</span>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div id="person-4" class="mb-4 p-4">
+                                <div class="person-name mb-2">
+                                    <label class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#person-fill"></use>
+                                        </svg><span>Questions & Answers</span>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="person-addr mb-2">
+                                    <label class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#house-fill"></use>
+                                        </svg>
+                                        <span>Address</span>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="d-flex mt-3 justify-content-center">
                             <button type="button" id="generate-content" class="btn btn-primary">Submit</button>
                         </div>
@@ -201,7 +285,8 @@
                 <div class="card-body">
                     <p id="content-output" class="p-2 mb-4 border rounded-3"></p>
                     <div class="d-flex justify-content-around fixed-bottom pb-4 pt-3 bg-c">
-                        <button class="btn btn-primary btn-copy" onclick="copyContent()">
+                        <button class="btn btn-primary btn-copy" id="copy-content"
+                            data-clipboard-target="#content-output">
                             Copy
                             <svg class="bi ms-2">
                                 <use href="#clipboard-check"></use>
@@ -221,6 +306,23 @@
 
         </div>
 
+        <script src="clipboard.min.js"></script>
+        <script>
+            var clipboard = new ClipboardJS('#copy-content');
+
+            clipboard.on('success', function (e) {
+                console.info('Action:', e.action);
+                console.info('Text:', e.text);
+                console.info('Trigger:', e.trigger);
+
+                e.clearSelection();
+            });
+
+            clipboard.on('error', function (e) {
+                console.error('Action:', e.action);
+                console.error('Trigger:', e.trigger);
+            });
+        </script>
     </body>
 
 </html>

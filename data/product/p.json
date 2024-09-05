@@ -34,19 +34,6 @@
     ]
   },
   {
-    "gds": "D01507",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/01507_2.jpg",
-    "detailImages": [
-      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_00 copy_2.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm 001 Updated_4.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_01_6.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_04_2.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_05_4.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_06_4.jpg",
-      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_07_6.jpg"
-    ]
-  },
-  {
     "gds": "D00620",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00620_2.jpg",
     "detailImages": [
@@ -135,6 +122,20 @@
       "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_09.jpg",
       "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_10.jpg",
       "https://www.atomy.com/in/admin/userfiles/202011/theFame_set_11.gif"
+    ]
+  },
+  {
+    "gds": "D00160",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00160_2.jpg",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_probiotics_01.gif",
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
+      "https://www.atomy.com/in/admin/userfiles/202109/probiotics_IN_02.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202109/probiotics_IN_03.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202109/probiotics_IN_04.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202109/probiotics_IN_05.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202109/probiotics_IN_06.gif",
+      "https://www.atomy.com/in/admin/userfiles/202109/probiotics_IN_07.gif"
     ]
   },
   {
@@ -446,6 +447,21 @@
     ]
   },
   {
+    "gds": "D00755",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00755_2.jpeg",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_hbCare_E_01.gif",
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
+      "https://www.atomy.com/in/admin/userfiles/202110/hbEssence_02.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202102/Atomy_Hydra_Brightening_Essence_02.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202102/Atomy_Hydra_Brightening_Essence_03.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202102/Atomy_Hydra_Brightening_Essence_04.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202102/Atomy_Hydra_Brightening_Essence_06.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202102/Atomy_Hydra_Brightening_Essence_07.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202102/Atomy_Hydra_Brightening_Essence_08.gif"
+    ]
+  },
+  {
     "gds": "D00601",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00601_2.jpg",
     "detailImages": [
@@ -702,11 +718,6 @@
     ]
   },
   {
-    "gds": "D92688",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/92688_2.JPG",
-    "detailImages": []
-  },
-  {
     "gds": "D92658",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/92658_2.jpg",
     "detailImages": []
@@ -797,13 +808,6 @@
       "https://www.atomy.com/in/admin/userfiles/202108/cABlack_IN_04.jpg",
       "https://www.atomy.com/in/admin/userfiles/202108/cABlack_IN_05.jpg",
       "https://www.atomy.com/in/admin/userfiles/202108/cABlack_IN_06.jpg"
-    ]
-  },
-  {
-    "gds": "D00965",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00965_2.jpg",
-    "detailImages": [
-      "https://www.atomy.com/in/admin/userfiles/202209/Balance_life_IN_1_1.jpg"
     ]
   },
   {
@@ -930,13 +934,6 @@
     ]
   },
   {
-    "gds": "D00465",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00465_2.jpg",
-    "detailImages": [
-      "http://www.atomy.com/in/admin/userfiles/202208/IN_dEMaskM.jpg"
-    ]
-  },
-  {
     "gds": "D00400",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00400_2.jpg",
     "detailImages": [
@@ -946,18 +943,6 @@
       "https://www.atomy.com/in/admin/userfiles/202406/IN_lipglow_04_1.jpg",
       "https://www.atomy.com/in/admin/userfiles/202406/IN_lipglow_05_1.jpg",
       "https://www.atomy.com/in/admin/userfiles/202406/IN_lipglow_06_1.jpg"
-    ]
-  },
-  {
-    "gds": "D00295",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00295_2.jpg",
-    "detailImages": [
-      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_01.jpg",
-      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_02[1].jpg",
-      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_03[1].jpg",
-      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_04[1].jpg",
-      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_05[1].jpg",
-      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_06[1].jpg"
     ]
   },
   {
