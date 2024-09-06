@@ -2,17 +2,42 @@ $(document).ready(function () {
   let currentLanguage = "english";
   let currentTemplate = "day";
 
+  // Date picker (dd-mm-yyyy)
+  flatpickr("#meetingDate", {
+    dateFormat: "d/m/Y", // Day-Month-Year
+    altInput: true, // Show formatted input
+    altFormat: "d/m/Y", // Alternative display format
+    disableMobile: true,
+  });
+
+  // Time picker (hour:minute AM/PM)
+  flatpickr("#meetingTime", {
+    enableTime: true, // Enable time selection
+    noCalendar: true, // Disable calendar
+    dateFormat: "h:i K", // Hour:Minute AM/PM format
+    time_24hr: false, // 12-hour time format
+    altInput: true, // Show formatted input
+    altFormat: "h:i K", // Alternative display format
+    disableMobile: true,
+  });
+
   // Function to update form fields based on current language
   function updateForm() {
     const form = contentData.form[currentLanguage];
-    $("#label-name span").text(form.name);
-    $("#label-addr span").text(form.address);
+    $("#label-host-name span").text(form.hostNameLabel);
+    $("#label-host-addr span").text(form.hostAddrLabel);
+    $("#label-trainer-name span").text(form.trainerNameLabel);
+    $("#label-trainer-addr span").text(form.trainerAddrLabel);
     $("#form-title").text(form.formTitle);
     $("#generate-content").text(form.generateButton);
     $("#switch-lang").text(form.switchTo);
-    $("#userName").attr("placeholder", form.nameTxt);
-    $("#userAddr").attr("placeholder", form.addressTxt);
-    $("#meetingLink").attr("placeholder", form.linkTxt);
+
+    // $("#hostName").attr("placeholder", form.hostNamePlaceholder);
+    // $("#hostAddr").attr("placeholder", form.hostAddrPlaceholder);
+    // $("#trainerName").attr("placeholder", form.trainerNamePlaceholder);
+    // $("#trainerAddr").attr("placeholder", form.trainerAddrPlaceholder);
+
+    // $("#meetingLink").attr("placeholder", form.linkTxt);
     $("#label-date span").text(form.dateTxt);
     $("#label-time span").text(form.timeTxt);
     $("#label-link span").text(form.linkTxt);
@@ -68,6 +93,12 @@ $(document).ready(function () {
     currentLanguage = currentLanguage === "english" ? "assamese" : "english";
     updateForm();
     updateContent();
+    $("html, body").animate(
+      {
+        scrollTop: $("#generate-content").offset().top - 350,
+      },
+      300
+    );
   });
 
   // Handle template selection
@@ -99,19 +130,18 @@ $(document).ready(function () {
 
   function toggleInputFields(isNightMode) {
     if (isNightMode) {
-      $("#label-name").parent().hide();
-      $("#label-addr").parent().hide();
+      $("#dayForm").hide();
     } else {
-      $("#label-name").parent().show();
-      $("#label-addr").parent().show();
+      $("#dayForm").show();
     }
   }
 
   // Handle form submission
   $("#generate-content").on("click", function () {
     const date = $("#meetingDate").val();
-    const time24 = $("#meetingTime").val();
+    const time = $("#meetingTime").val();
     const meetLink = $("#meetingLink").val();
+    // console.log(date);
 
     if (currentTemplate == "night") {
       // Collect data for multiple persons
@@ -128,8 +158,8 @@ $(document).ready(function () {
         }
       }
 
-      if (date && time24 && meetLink) {
-        const time12 = convertTo12HourFormat(time24);
+      if (date && time && meetLink) {
+        // const time12 = convertTo12HourFormat(time24);
         let contentTemplate =
           contentData.content[currentLanguage][currentTemplate];
 
@@ -141,7 +171,7 @@ $(document).ready(function () {
         });
 
         contentTemplate = contentTemplate
-          .replace(/{time}/g, time12)
+          .replace(/{time}/g, time)
           .replace(/{date}/g, date)
           .replace(/{meeting link}/g, meetLink);
 
@@ -159,17 +189,29 @@ $(document).ready(function () {
       }
     } else {
       // Day mode: handle single person data
-      const name = $("#userName").val();
-      const address = $("#userAddr").val();
+      const hostName = $("#hostName").val();
+      const hostAddress = $("#hostAddr").val();
+      const trainerName = $("#trainerName").val();
+      const trainerAddress = $("#trainerAddr").val();
 
-      if (name && address && date && time24 && meetLink) {
-        const time12 = convertTo12HourFormat(time24);
+      if (
+        hostName &&
+        hostAddress &&
+        trainerName &&
+        trainerAddress &&
+        date &&
+        time &&
+        meetLink
+      ) {
+        // const time12 = convertTo12HourFormat(time24);
         const contentTemplate =
           contentData.content[currentLanguage][currentTemplate];
         const content = contentTemplate
-          .replace(/{name}/g, `*${name}*`)
-          .replace(/{address}/g, `_${address}_`)
-          .replace(/{time}/g, time12)
+          .replace(/{host_name}/g, `*${hostName}*`)
+          .replace(/{host_address}/g, `_${hostAddress}_`)
+          .replace(/{trainer_name}/g, `*${trainerName}*`)
+          .replace(/{trainer_address}/g, `_${trainerAddress}_`)
+          .replace(/{time}/g, time)
           .replace(/{date}/g, date)
           .replace(/{meeting link}/g, meetLink);
 
@@ -205,6 +247,15 @@ $(document).ready(function () {
     const hours12 = hours % 12 || 12;
     const minutesFormatted = minutes.toString().padStart(2, "0");
     return `${hours12}:${minutesFormatted} ${suffix}`;
+  }
+
+  function convertDate(dateString) {
+    const date = new Date(dateString);
+    const day = String(date.getDate()).padStart(2, "0");
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const year = date.getFullYear();
+
+    return `${day}/${month}/${year}`;
   }
 
   function scrollToBottom() {

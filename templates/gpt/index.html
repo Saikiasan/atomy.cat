@@ -3,9 +3,10 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Atomy Meeting Templates</title>
         <link rel="stylesheet" href="../../data/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../node_modules/flatpickr/dist/flatpickr.min.css">
         <style>
             html,
             body {
@@ -76,15 +77,16 @@
                 display: block !important;
             }
         </style>
-        <script src="../../data/assets/js/bootstrap.bundle.min.js"></script>
-        <script src="../../data/assets/js/jquery.min.js"></script>
-        <script src="content.js"></script>
-        <script src="main.js"></script>
+        <script src="../../data/assets/js/bootstrap.bundle.min.js?v=1"></script>
+        <script src="../../data/assets/js/jquery.min.js?v=1"></script>
+        <script src="../../node_modules/flatpickr/dist/flatpickr.min.js?v=1"></script>
+        <script src="content.js?v=2"></script>
+        <script src="main.js?v=2"></script>
     </head>
 
     <body>
         <div class="mt-4 d-flex justify-content-around align-items-center sticky-top bg-c py-3">
-            <button class="btn btn-outline-dark" disabled>Version: 0.1.2</button>
+            <button class="btn btn-outline-dark" disabled>Version: 1.2</button>
             <button id="switch-lang" class="btn btn-secondary">Switch to Assamese</button>
         </div>
         <!-- <div class="language-switch position-absolute top-0 end-0 me-4 mt-4">
@@ -127,8 +129,8 @@
                             </div>
                         </div>
 
-                        <div class="mb-3 d-flex justify-content-around">
-                            <div class="mb-3">
+                        <div class="mb-4 p-4 d-flex justify-content-around align-items-center gap-4">
+                            <div class="">
                                 <label for="meetingDate" id="label-date" class="form-label">
                                     <svg class="bi me-2">
                                         <use href="#calendar-date"></use>
@@ -137,9 +139,9 @@
                                         Date
                                     </span>
                                 </label>
-                                <input type="date" class="form-control" id="meetingDate">
+                                <input type="text" class="form-control" id="meetingDate" placeholder="Select Date">
                             </div>
-                            <div class="mb-3">
+                            <div class="col-5">
                                 <label for="meetingTime" id="label-time" class="form-label">
                                     <svg class="bi me-2">
                                         <use href="#clock"></use>
@@ -148,7 +150,7 @@
                                         Time
                                     </span>
                                 </label>
-                                <input type="time" class="form-control" id="meetingTime">
+                                <input type="text" class="form-control" id="meetingTime" placeholder="Select Time">
                             </div>
                         </div>
 
@@ -164,30 +166,65 @@
                             <input type="text" class="form-control" id="meetingLink"
                                 placeholder="Enter Gogle meet link">
                         </div>
+                        <hr>
+                        <div id="dayForm">
+                            <div class="mb-5 px-3">
+                                <div class="mb-4">
+                                    <label for="hostName" id="label-host-name" class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#person-fill"></use>
+                                        </svg>
+                                        <span>
+                                            Host Name
+                                        </span>
+                                    </label>
+                                    <input type="text" class="form-control" id="hostName" placeholder="Enter host name">
+                                </div>
 
-                        <div class="mb-4">
-                            <label for="userName" id="label-name" class="form-label">
-                                <svg class="bi me-2">
-                                    <use href="#person-fill"></use>
-                                </svg>
-                                <span>
-                                    Your Name
-                                </span>
-                            </label>
-                            <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+                                <div class="">
+                                    <label for="hostAddr" id="label-host-addr" class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#house-fill"></use>
+                                        </svg>
+                                        <span>
+                                            Host Address
+                                        </span>
+                                    </label>
+                                    <input type="text" class="form-control" id="hostAddr"
+                                        placeholder="Enter host Address">
+                                </div>
+                            </div>
+
+                            <hr>
+                            <div class="px-3">
+                                <div class="mb-4">
+                                    <label for="trainerName" id="label-trainer-name" class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#person-fill"></use>
+                                        </svg>
+                                        <span>
+                                            Trainer Name
+                                        </span>
+                                    </label>
+                                    <input type="text" class="form-control" id="trainerName"
+                                        placeholder="Enter host name">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="trainerAddr" id="label-trainer-addr" class="form-label">
+                                        <svg class="bi me-2">
+                                            <use href="#house-fill"></use>
+                                        </svg>
+                                        <span>
+                                            Trainer Address
+                                        </span>
+                                    </label>
+                                    <input type="text" class="form-control" id="trainerAddr"
+                                        placeholder="Enter host Address">
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="mb-4">
-                            <label for="userAddr" id="label-addr" class="form-label">
-                                <svg class="bi me-2">
-                                    <use href="#house-fill"></use>
-                                </svg>
-                                <span>
-                                    Your Address
-                                </span>
-                            </label>
-                            <input type="text" class="form-control" id="userAddr" placeholder="Enter your Address">
-                        </div>
 
                         <div id="night-form">
                             <!-- leader -->
