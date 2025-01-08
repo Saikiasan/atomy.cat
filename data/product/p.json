@@ -34,6 +34,19 @@
     ]
   },
   {
+    "gds": "D01507",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/01507_2.jpg",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_00 copy_2.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm 001 Updated_4.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_01_6.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_04_2.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_05_4.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_06_4.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202405/IN_resetBalm_07_6.jpg"
+    ]
+  },
+  {
     "gds": "D00620",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00620_2.jpg",
     "detailImages": [
@@ -179,7 +192,7 @@
     "detailImages": [
       "https://www.atomy.com/in/admin/userfiles/202204/IN_eveningcare4_01.gif",
       "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
-      "https://www.atomy.com/in/admin/userfiles/202011/eveningcare4_set_02.jpg",
+      "https://www.atomy.com/in/admin/userfiles/202410/Layer 3_1.png",
       "https://www.atomy.com/in/admin/userfiles/202011/eveningcare4_set_03.jpg",
       "https://www.atomy.com/in/admin/userfiles/202011/eveningcare4_set_04.jpg",
       "https://www.atomy.com/in/admin/userfiles/202011/eveningcare4_set_05.jpg"
@@ -417,7 +430,7 @@
   },
   {
     "gds": "D00631",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00631_2.JPG",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00631_2.jpg",
     "detailImages": [
       "https://www.atomy.com/in/admin/userfiles/202204/IN_hairbody_cleanser_01_1.gif",
       "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
@@ -718,6 +731,13 @@
     ]
   },
   {
+    "gds": "D94085",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/94085_2.jpg",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202411/IN_shilajit_1.jpg"
+    ]
+  },
+  {
     "gds": "D92658",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/92658_2.jpg",
     "detailImages": []
@@ -726,6 +746,14 @@
     "gds": "D92618",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/92618_2.jpg",
     "detailImages": []
+  },
+  {
+    "gds": "D92453",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/92453_2.jpg",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202109/image 1_1.PNG",
+      "https://www.atomy.com/in/admin/userfiles/202109/Image 2_1.PNG"
+    ]
   },
   {
     "gds": "D92445",
@@ -882,6 +910,15 @@
     ]
   },
   {
+    "gds": "D00553",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00553_2.JPG",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_cleansingkit_01.gif",
+      "https://www.atomy.com/in/admin/userfiles/202204/IN_address_2204.gif",
+      "https://www.atomy.com/in/admin/userfiles/202011/cleansingkit_02.jpg"
+    ]
+  },
+  {
     "gds": "D00488",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00488_2.jpg",
     "detailImages": [
@@ -934,6 +971,13 @@
     ]
   },
   {
+    "gds": "D00465",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00465_2.jpg",
+    "detailImages": [
+      "http://www.atomy.com/in/admin/userfiles/202208/IN_dEMaskM.jpg"
+    ]
+  },
+  {
     "gds": "D00400",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00400_2.jpg",
     "detailImages": [
@@ -946,6 +990,18 @@
     ]
   },
   {
+    "gds": "D00295",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00295_2.jpg",
+    "detailImages": [
+      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_01.jpg",
+      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_02[1].jpg",
+      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_03[1].jpg",
+      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_04[1].jpg",
+      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_05[1].jpg",
+      "http://www.atomy.com/in/admin/userfiles/202204/IN_rosemist_06[1].jpg"
+    ]
+  },
+  {
     "gds": "D00286",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00286_2.jpg",
     "detailImages": [
@@ -954,13 +1010,6 @@
       "http://www.atomy.com/in/admin/userfiles/202204/IN_sunStick_03_4.jpg",
       "http://www.atomy.com/in/admin/userfiles/202204/IN_sunStick_04.jpg",
       "http://www.atomy.com/in/admin/userfiles/202204/IN_sunStick_05.jpg"
-    ]
-  },
-  {
-    "gds": "D00180",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00180_2.jpg",
-    "detailImages": [
-      "http://www.atomy.com/in/admin/userfiles/202303/IN_puerTea.png"
     ]
   },
   {
@@ -978,6 +1027,13 @@
       "https://www.atomy.com/in/admin/userfiles/202403/IN_noniRE_02.jpg",
       "https://www.atomy.com/in/admin/userfiles/202306/IN_noniRE_03_1.jpg",
       "https://www.atomy.com/in/admin/userfiles/202306/IN_noniRE_04_1.jpg"
+    ]
+  },
+  {
+    "gds": "D00111",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00111_2.jpg",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202411/IN_aEOmega3_1.jpg"
     ]
   },
   {

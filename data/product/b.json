@@ -18,6 +18,12 @@
     "gds": "D01513"
   },
   {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/01507_2.jpg",
+    "title": "Atomy Absolute Reset Balm",
+    "price": 1200.0,
+    "gds": "D01507"
+  },
+  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00620_2.jpg",
     "title": "Saengmodan Hair Tonic",
     "price": 1300.0,
@@ -198,7 +204,7 @@
     "gds": "D00661"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00631_2.JPG",
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00631_2.jpg",
     "title": "Herbal Body Cleanser",
     "price": 1000.0,
     "gds": "D00631"
@@ -354,6 +360,12 @@
     "gds": "D92682"
   },
   {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/94085_2.jpg",
+    "title": "Atomy Shilajit Capsules",
+    "price": 899.0,
+    "gds": "D94085"
+  },
+  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92658_2.jpg",
     "title": "Atomy Life Scenario (Including\n                                        Moment of Truth)",
     "price": 150.0,
@@ -364,6 +376,12 @@
     "title": "English Pamphlet Foldable-\n                                        Version 2024 (25 pcs per pack)",
     "price": 210.0,
     "gds": "D92618"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92453_2.jpg",
+    "title": "Mini Catalog 10 Pcs-(English)-\n                                        Version Oct 2024",
+    "price": 500.0,
+    "gds": "D92453"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92445_2.jpeg",
@@ -462,6 +480,12 @@
     "gds": "D00757"
   },
   {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00553_2.JPG",
+    "title": "Cleansing Travel Kit (6pcs per\n                                        set)",
+    "price": 1500.0,
+    "gds": "D00553"
+  },
+  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00488_2.jpg",
     "title": "Atomy Sugar Body Scrub",
     "price": 1400.0,
@@ -492,22 +516,28 @@
     "gds": "D00466"
   },
   {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00465_2.jpg",
+    "title": "Atomy Daily Expert Mask\n                                        Moisturizing",
+    "price": 1300.0,
+    "gds": "D00465"
+  },
+  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00400_2.jpg",
     "title": "Atomy Lip Glow",
     "price": 1200.0,
     "gds": "D00400"
   },
   {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00295_2.jpg",
+    "title": "Atomy Rose Rain Mist",
+    "price": 1400.0,
+    "gds": "D00295"
+  },
+  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00286_2.jpg",
     "title": "Atomy Sun Stick",
     "price": 1200.0,
     "gds": "D00286"
-  },
-  {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00180_2.jpg",
-    "title": "Atomy Pu'er Tea",
-    "price": 3600.0,
-    "gds": "D00180"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00174_2.jfif",
@@ -520,6 +550,12 @@
     "title": "Atomy Noni Drink",
     "price": 6500.0,
     "gds": "D00170"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00111_2.jpg",
+    "title": "Alaska E-Omega 3",
+    "price": 4000.0,
+    "gds": "D00111"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00101_2.jpg",

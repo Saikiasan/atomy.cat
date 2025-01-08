@@ -21,6 +21,13 @@
     "points": 18000
   },
   {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D01507",
+    "gds": "D01507",
+    "title": "Atomy Absolute Reset Balm",
+    "price": 1062.0,
+    "points": 7000
+  },
+  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00620",
     "gds": "D00620",
     "title": "Saengmodan Hair Tonic",
@@ -413,6 +420,13 @@
     "points": 0
   },
   {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D94085",
+    "gds": "D94085",
+    "title": "Atomy Shilajit Capsules",
+    "price": 784.0,
+    "points": 4000
+  },
+  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92658",
     "gds": "D92658",
     "title": "Atomy Life Scenario (Including\n                                        Moment of Truth)",
@@ -423,7 +437,14 @@
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92618",
     "gds": "D92618",
     "title": "English Pamphlet Foldable-\n                                        Version 2024 (25 pcs per pack)",
-    "price": 210.0,
+    "price": 210.04,
+    "points": 0
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92453",
+    "gds": "D92453",
+    "title": "Mini Catalog 10 Pcs-(English)-\n                                        Version Oct 2024",
+    "price": 500.0,
     "points": 0
   },
   {
@@ -539,6 +560,13 @@
     "points": 19800
   },
   {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00553",
+    "gds": "D00553",
+    "title": "Cleansing Travel Kit (6pcs per\n                                        set)",
+    "price": 1309.8,
+    "points": 4800
+  },
+  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00488",
     "gds": "D00488",
     "title": "Atomy Sugar Body Scrub",
@@ -574,6 +602,13 @@
     "points": 5000
   },
   {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00465",
+    "gds": "D00465",
+    "title": "Atomy Daily Expert Mask\n                                        Moisturizing",
+    "price": 1109.2,
+    "points": 5000
+  },
+  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00400",
     "gds": "D00400",
     "title": "Atomy Lip Glow",
@@ -581,18 +616,18 @@
     "points": 5000
   },
   {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00295",
+    "gds": "D00295",
+    "title": "Atomy Rose Rain Mist",
+    "price": 1091.5,
+    "points": 5200
+  },
+  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00286",
     "gds": "D00286",
     "title": "Atomy Sun Stick",
     "price": 1014.8,
     "points": 5300
-  },
-  {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00180",
-    "gds": "D00180",
-    "title": "Atomy Pu'er Tea",
-    "price": 3186.0,
-    "points": 17000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00174",
@@ -607,6 +642,13 @@
     "title": "Atomy Noni Drink",
     "price": 5428.0,
     "points": 36000
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00111",
+    "gds": "D00111",
+    "title": "Alaska E-Omega 3",
+    "price": 3422.0,
+    "points": 15000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00101",

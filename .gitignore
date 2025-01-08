@@ -1,4 +1,6 @@
 *.py
+*.webp
+*.jpg
 backup_versions/
 data/assets/css/svg/
 data/assets/css/icons/
