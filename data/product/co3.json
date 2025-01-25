@@ -129,19 +129,6 @@
         "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00183_2.jpg",
         "buyer_price": 7500.0
     },
-    "D00104": {
-        "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00104",
-        "gds": "D00104",
-        "title": "HemoHIM *4set",
-        "points": 290000,
-        "dist_price": 40120.0,
-        "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00104_2.jpg",
-        "detailImages": [
-            "http://www.atomy.com/in/admin/userfiles/202205/IN_hemohim.jpg"
-        ],
-        "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00104_2.jpg",
-        "buyer_price": 60000.0
-    },
     "D00102": {
         "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00102",
         "gds": "D00102",
@@ -1103,6 +1090,19 @@
         "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/94085_2.jpg",
         "buyer_price": 899.0
     },
+    "D94084": {
+        "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D94084",
+        "gds": "D94084",
+        "title": "Atomy 100% Pure* Spirulina Powder",
+        "points": 10000,
+        "dist_price": 1652.0,
+        "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/94084_2.png",
+        "detailImages": [
+            "https://www.atomy.com/in/admin/userfiles/202412/IN_spirulina_pouch_1.jpg"
+        ],
+        "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/94084_2.png",
+        "buyer_price": 1999.0
+    },
     "D92658": {
         "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92658",
         "gds": "D92658",
@@ -1210,6 +1210,19 @@
         ],
         "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07115_2.jpg",
         "buyer_price": 3200.0
+    },
+    "D07101": {
+        "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07101",
+        "gds": "D07101",
+        "title": "Atomy HemoHim Offer (Buy 4 set Get 1 free)",
+        "points": 290000,
+        "dist_price": 40120.0,
+        "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/07101_2.jpg",
+        "detailImages": [
+            "https://www.atomy.com/in/admin/userfiles/202501/IN_hemohim_1.jpg"
+        ],
+        "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07101_2.jpg",
+        "buyer_price": 60000.0
     },
     "D04717": {
         "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D04717",
@@ -1551,6 +1564,19 @@
         ],
         "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00286_2.jpg",
         "buyer_price": 1200.0
+    },
+    "D00180": {
+        "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00180",
+        "gds": "D00180",
+        "title": "Atomy Pu'er Tea",
+        "points": 17000,
+        "dist_price": 3186.0,
+        "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00180_2.jpg",
+        "detailImages": [
+            "http://www.atomy.com/in/admin/userfiles/202303/IN_puerTea.png"
+        ],
+        "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00180_2.jpg",
+        "buyer_price": 3600.0
     },
     "D00174": {
         "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00174",
