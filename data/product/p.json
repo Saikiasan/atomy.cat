@@ -88,13 +88,6 @@
     ]
   },
   {
-    "gds": "D00104",
-    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00104_2.jpg",
-    "detailImages": [
-      "http://www.atomy.com/in/admin/userfiles/202205/IN_hemohim.jpg"
-    ]
-  },
-  {
     "gds": "D00102",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00102_2.jpg",
     "detailImages": [
@@ -738,6 +731,13 @@
     ]
   },
   {
+    "gds": "D94084",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/94084_2.png",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202412/IN_spirulina_pouch_1.jpg"
+    ]
+  },
+  {
     "gds": "D92658",
     "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/92658_2.jpg",
     "detailImages": []
@@ -795,6 +795,13 @@
       "https://www.atomy.com/in/admin/userfiles/202406/Layer 1-K-BEAUty_02_1.jpg",
       "https://www.atomy.com/in/admin/userfiles/202406/Group 1 copy-K-Beauty_03_1.jpg",
       "https://www.atomy.com/in/admin/userfiles/202406/Layer 1-K-Beauty_03_2.jpg"
+    ]
+  },
+  {
+    "gds": "D07101",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/07101_2.jpg",
+    "detailImages": [
+      "https://www.atomy.com/in/admin/userfiles/202501/IN_hemohim_1.jpg"
     ]
   },
   {
@@ -1010,6 +1017,13 @@
       "http://www.atomy.com/in/admin/userfiles/202204/IN_sunStick_03_4.jpg",
       "http://www.atomy.com/in/admin/userfiles/202204/IN_sunStick_04.jpg",
       "http://www.atomy.com/in/admin/userfiles/202204/IN_sunStick_05.jpg"
+    ]
+  },
+  {
+    "gds": "D00180",
+    "bannerImgUrl": "https://www.atomy.com/in/shopping/p_img/100/00180_2.jpg",
+    "detailImages": [
+      "http://www.atomy.com/in/admin/userfiles/202303/IN_puerTea.png"
     ]
   },
   {

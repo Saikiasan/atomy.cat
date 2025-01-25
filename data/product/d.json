@@ -49,13 +49,6 @@
     "points": 35000
   },
   {
-    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00104",
-    "gds": "D00104",
-    "title": "HemoHIM *4set",
-    "price": 40120.0,
-    "points": 290000
-  },
-  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00102",
     "gds": "D00102",
     "title": "HemoHIM *2set",
@@ -427,6 +420,13 @@
     "points": 4000
   },
   {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D94084",
+    "gds": "D94084",
+    "title": "Atomy 100% Pure* Spirulina\n                                        Powder",
+    "price": 1652.0,
+    "points": 10000
+  },
+  {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D92658",
     "gds": "D92658",
     "title": "Atomy Life Scenario (Including\n                                        Moment of Truth)",
@@ -481,6 +481,13 @@
     "title": "Atomy Korean Beauty Pack",
     "price": 2500.0,
     "points": 12800
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D07101",
+    "gds": "D07101",
+    "title": "Atomy HemoHim Offer (Buy 4 set\n                                        Get 1 free)",
+    "price": 40120.0,
+    "points": 290000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D04717",
@@ -628,6 +635,13 @@
     "title": "Atomy Sun Stick",
     "price": 1014.8,
     "points": 5300
+  },
+  {
+    "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00180",
+    "gds": "D00180",
+    "title": "Atomy Pu'er Tea",
+    "price": 3186.0,
+    "points": 17000
   },
   {
     "hrefUrlE": "https://www.atomy.com/in/Home/Product/ProductView?GdsCode=D00174",
