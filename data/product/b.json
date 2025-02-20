@@ -13,7 +13,7 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/01513_2.jpg",
-    "title": "Atomy Absolute 24K Gold Night\n                                        Mask",
+    "title": "Atomy Absolute 24K Gold Night Mask",
     "price": 3100.0,
     "gds": "D01513"
   },
@@ -37,9 +37,15 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00183_2.jpg",
-    "title": "Atomy Pomegranate Mixed Fruit\n                                        Jelly",
+    "title": "Atomy Pomegranate Mixed Fruit Jelly",
     "price": 7500.0,
     "gds": "D00183"
+  },
+  {
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00104_2.jpg",
+    "title": "HemoHIM *4set",
+    "price": 60000.0,
+    "gds": "D00104"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00102_2.jpg",
@@ -49,24 +55,24 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/90178_2.jpeg",
-    "title": "ATOMY 100% PURE* SPIRULINA\n                                        (India)",
+    "title": "ATOMY 100% PURE* SPIRULINA (India)",
     "price": 699.0,
     "gds": "D90178"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00281_2.jpeg",
-    "title": "Sunscreen SPF50+ PA+++(Beige\n                                        )",
+    "title": "Sunscreen SPF50+ PA+++(Beige )",
     "price": 900.0,
     "gds": "D00281"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00003_2.jpeg",
-    "title": "The Fame Skincare Set (5 Pcs\n                                        per Set)",
+    "title": "The Fame Skincare Set (5 Pcs per Set)",
     "price": 9100.0,
     "gds": "D00003"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00160_2.jpg",
+    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00160_2.JPG",
     "title": "Atomy Nutraceutical Mix",
     "price": 4500.0,
     "gds": "D00160"
@@ -79,13 +85,13 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00474_2.jpg",
-    "title": "Atomy Cerabebe Shampoo &\n                                        Bath",
+    "title": "Atomy Cerabebe Shampoo & Bath",
     "price": 1300.0,
     "gds": "D00474"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00351_2.jpeg",
-    "title": "Evening Care Set(4 Pcs per\n                                        Set)",
+    "title": "Evening Care Set(4 Pcs per Set)",
     "price": 3300.0,
     "gds": "D00351"
   },
@@ -97,13 +103,13 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00271_2.jpeg",
-    "title": "Sunscreen SPF50+ PA+++(White\n                                        )",
+    "title": "Sunscreen SPF50+ PA+++(White )",
     "price": 900.0,
     "gds": "D00271"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00266_2.jpg",
-    "title": "Healthy Glow Base SPF30\n                                        PA++",
+    "title": "Healthy Glow Base SPF30 PA++",
     "price": 1400.0,
     "gds": "D00266"
   },
@@ -217,7 +223,7 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00755_2.jpeg",
-    "title": "Hydra Brightening capsule\n                                        essence",
+    "title": "Hydra Brightening capsule essence",
     "price": 1600.0,
     "gds": "D00755"
   },
@@ -361,25 +367,25 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/94084_2.png",
-    "title": "Atomy 100% Pure* Spirulina\n                                        Powder",
+    "title": "Atomy 100% Pure* Spirulina Powder",
     "price": 1999.0,
     "gds": "D94084"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92658_2.jpg",
-    "title": "Atomy Life Scenario (Including\n                                        Moment of Truth)",
+    "title": "Atomy Life Scenario (Including Moment of\n                    Truth)",
     "price": 150.0,
     "gds": "D92658"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92618_2.jpg",
-    "title": "English Pamphlet Foldable-\n                                        Version 2024 (25 pcs per pack)",
+    "title": "English Pamphlet Foldable- Version 2024 (25\n                    pcs per pack)",
     "price": 210.0,
     "gds": "D92618"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/92453_2.jpg",
-    "title": "Mini Catalog 10 Pcs-(English)-\n                                        Version Oct 2024",
+    "title": "Mini Catalog 10 Pcs-(English)- Version Oct\n                    2024",
     "price": 500.0,
     "gds": "D92453"
   },
@@ -403,7 +409,7 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07116_2.jpg",
-    "title": "Atomy 360 Degree Health\n                                        Combo*",
+    "title": "Atomy 360 Degree Health Combo*",
     "price": 12999.0,
     "gds": "D07116"
   },
@@ -414,14 +420,8 @@
     "gds": "D07115"
   },
   {
-    "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/07101_2.jpg",
-    "title": "Atomy HemoHim Offer (Buy 4 set\n                                        Get 1 free)",
-    "price": 60000.0,
-    "gds": "D07101"
-  },
-  {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/04717_2.jpg",
-    "title": "Adelica Waterproof Mascara -\n                                        Black",
+    "title": "Adelica Waterproof Mascara - Black",
     "price": 1000.0,
     "gds": "D04717"
   },
@@ -433,19 +433,19 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/01443_2.jpg",
-    "title": "Synergy Ampoule Program *1\n                                        set",
+    "title": "Synergy Ampoule Program *1 set",
     "price": 8500.0,
     "gds": "D01443"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/01235_2.jpg",
-    "title": "Atomy Homme Energizing All In\n                                        One",
+    "title": "Atomy Homme Energizing All In One",
     "price": 2000.0,
     "gds": "D01235"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00975_2.jpeg",
-    "title": "Atomy Cafe Arabica Black (50\n                                        sticks)",
+    "title": "Atomy Cafe Arabica Black (50 sticks)",
     "price": 2000.0,
     "gds": "D00975"
   },
@@ -457,7 +457,7 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00838_2.jpg",
-    "title": "Atomy 365 Anti Droplet Face\n                                        Mask (50 sheet)",
+    "title": "Atomy 365 Anti Droplet Face Mask (50\n                    sheet)",
     "price": 3200.0,
     "gds": "D00838"
   },
@@ -469,7 +469,7 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00808_2.jpg",
-    "title": "Atomy Anti Pollution Mask\n                                        [KF94] (5 pcs)",
+    "title": "Atomy Anti Pollution Mask [KF94] (5 pcs)",
     "price": 800.0,
     "gds": "D00808"
   },
@@ -481,13 +481,13 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00757_2.jpg",
-    "title": "Hydra Brightening Care Set (2\n                                        Pcs per Set)",
+    "title": "Hydra Brightening Care Set (2 Pcs per Set)",
     "price": 3000.0,
     "gds": "D00757"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00553_2.JPG",
-    "title": "Cleansing Travel Kit (6pcs per\n                                        set)",
+    "title": "Cleansing Travel Kit (6pcs per set)",
     "price": 1500.0,
     "gds": "D00553"
   },
@@ -505,25 +505,25 @@
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00482_2.jpg",
-    "title": "Atomy Deep Pure Cleansing\n                                        Oil",
+    "title": "Atomy Deep Pure Cleansing Oil",
     "price": 2100.0,
     "gds": "D00482"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00467_2.jpg",
-    "title": "Atomy Daily Expert Mask\n                                        Firming",
+    "title": "Atomy Daily Expert Mask Firming",
     "price": 1300.0,
     "gds": "D00467"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00466_2.jpg",
-    "title": "Atomy Daily Expert Mask\n                                        Brightening",
+    "title": "Atomy Daily Expert Mask Brightening",
     "price": 1300.0,
     "gds": "D00466"
   },
   {
     "imageUrl": "https://www.atomy.com/in/shopping/p_img/100/00465_2.jpg",
-    "title": "Atomy Daily Expert Mask\n                                        Moisturizing",
+    "title": "Atomy Daily Expert Mask Moisturizing",
     "price": 1300.0,
     "gds": "D00465"
   },
