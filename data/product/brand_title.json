@@ -1,4 +1,10 @@
-{
-  "text": ["Welcome!", "Inspiration", "Opportunity", "Growth"],
-  "icon": "stars"
-}
+[
+  {
+    "text": ["Inspiration", "Joy", "Hope"],
+    "icon": "stars"
+  },
+  {
+    "text": "Empowerment",
+    "icon": "sun"
+  }
+]
